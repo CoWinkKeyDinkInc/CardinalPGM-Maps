@@ -18,3 +18,6 @@ What this repository does is try to update and fix the maps so they can play bet
  - Please [prune](https://docs.oc.tc/packaging/pruning_chunks) chunks, remove unnecessary entities and delete `.mcr`  files before submitting maps. GitHub repositories are limited to 1GB in size and I'd only want to make a second one if it's absolutely necessary.
  - Deleting unnecessary files can make a massive difference. This reduction was done by just deleting 64 `.mcr` files and removing all entities.
 ![pic](http://puu.sh/gPEj4.png)
+
+## An important note
+ - Some forks of this repository may contain a huge list of maps that are from OCN. We won't accept these as they're usually obtained without permission.  We have absolutely nothing to do with these forks, so if you have issues, send it to them.
