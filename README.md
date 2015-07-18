@@ -21,8 +21,8 @@ What this repository does is try to update and fix the maps so they can play bet
 ![pic](http://puu.sh/gPEj4.png)
 
 ## Credits (Who allowed these maps here)
- 1. Oculo and Q*Boid by CoWinkKeyDinkInc
- 2. Bayou Battle, Jungle Beat, Lights Out, Mayan Apocalypse, Ring Race, Swamped, Swamped Mini and Tenebrous by Mikeg542
+ 1. Oculo and Q*Boid **by CoWinkKeyDinkInc**
+ 2. Bayou Battle, Jungle Beat, Lights Out, Mayan Apocalypse, Ring Race, Swamped, Swamped Mini and Tenebrous **by Mikeg542**
 
 ## An important note
  - Some forks of this repository may contain a huge list of maps that are from OCN. We won't accept these as they're usually obtained without permission.  We have absolutely nothing to do with these forks, so if you have issues, send it to them.
