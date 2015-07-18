@@ -7,7 +7,7 @@ What this repository does is try to update and fix the maps so they can play bet
 
 ## How do I contribute?
  - If you have a map that you want to be updated or fixed, submit a pull request!
- - If the pull request is a fix in a map, please only have one map involved in a commit and include pictures on asthetic changes.
+ - If the pull request is a fix in a map, please only have one map involved in a commit and include pictures on aesthetic changes.
  - Use proper spacing and formatting in XML, spacing will make XML files much easier to read.
 
 ## How do I get my map on this repository?
