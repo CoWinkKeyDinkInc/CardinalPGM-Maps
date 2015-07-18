@@ -18,3 +18,7 @@ What this repository does is try to update and fix the maps so they can play bet
  - Please [prune](https://docs.oc.tc/packaging/pruning_chunks) chunks, remove unnecessary entities and delete `.mcr`  files before submitting maps. GitHub repositories are limited to 1GB in size and I'd only want to make a second one if it's absolutely necessary.
  - Deleting unnecessary files can make a massive difference. This reduction was done by just deleting 64 `.mcr` files and removing all entities.
 ![pic](http://puu.sh/gPEj4.png)
+
+## Credits (Who allowed these maps here)
+ 1. Oculo and Q*Boid by CoWinkKeyDinkInc
+ 2. Bayou Battle, Jungle Beat, Lights Out, Mayan Apocalypse, Ring Race, Swamped, Swamped Mini and Tenebrous by Mikeg542
