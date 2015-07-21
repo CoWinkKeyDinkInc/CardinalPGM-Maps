@@ -71,5 +71,5 @@
     <item>arrow</item>
     <item>leather chestplate</item>
 </itemremove>
-<autorespawn/>
+<include src="blitz-global.xml"/>
 </map>
