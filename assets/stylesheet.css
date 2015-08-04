@@ -1,0 +1,54 @@
+body  {
+  background-color: bisque
+}
+
+.center {
+    text-align: center
+}
+
+.blurb {
+  min-width: 416px;
+  margin-left: 150px;
+  margin-right: 150px;  
+}
+
+.thumbnail {
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 300px;
+  float: left
+}
+
+img {
+  padding:2px;
+  background-color:midnightblue;
+  margin: 5px
+}
+
+.min {
+  min-width: 700px;
+}
+
+.download {
+  font-size: 200%;
+}
+
+.fa {
+  color: black
+}
+
+.btn-group {
+  position: relative;
+    left: 46.2%;
+    right: 50%;
+}
+
+li {
+  margin: 0px;
+  padding: 0px;
+  float: left
+}
+
+ul {
+  list-style-type: none
+}
