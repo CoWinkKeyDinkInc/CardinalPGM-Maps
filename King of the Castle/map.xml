@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<map proto="1.3.6">
+<name>King of the Fortress</name>
+<version>1.0.0</version>
+<objective>Capture and hold the Fortress</objective>
+<authors>
+    <author uuid="c26e7a7f-b4ce-4ebc-ac4d-f60691915d23"/> <!-- Kroest -->
+</authors>
+<teams>
+    <team color="red" max="20" max-overfill="22">red</team>
+    <team color="yellow" max="20" max-overfill="22">yellow</team>
+</teams>
+<kits>
+    <kit name="spawn">
+        <item slot="0">iron sword</item>
+        <item slot="3">iron axe</item>
+        <item slot="1" enchantment="arrow infinite:1" enchantment="ARROW_DAMAGE:1">bow</item>
+        <item slot="4" amount="1">golden apple</item>
+        <item slot="28" amount="1">arrow</item>
+        <potion duration="10">damage resistance</potion>
+        <chestplate enchantment="protection explosions:2">chainmail chestplate</chestplate>		
+        <item slot="2" damage="-3000" attributes="generic.attackDamage:add:7">diamond pickaxe</item>
+        <item slot="27" damage="-3000" name="`6TNT Defuser" lore="`7Right click to defuse team griefer's TNT|`7Does not work in `9water|`7Use `a/report `7to alert the staff">shears</item>
+        <item slot="11" amount="32">nether fence</item>
+        <item slot="31" amount="32">step</item>
+        <item slot="22" amount="16">ladder</item>
+        <item slot="5" amount="16">stone button</item>
+        <item slot="32" amount="8">stone plate</item>
+        <item slot="23" amount="16">lever</item>
+        <item slot="14" amount="16">trap door</item>
+        <item slot="6">water bucket</item>
+        <item slot="33">water bucket</item>
+        <item slot="24">water bucket</item>
+        <item slot="15">water bucket</item>
+        <item slot="7" amount="1">redstone block</item>
+        <item slot="34" amount="64">redstone</item>
+        <item slot="25" amount="16">redstone torch on</item>
+        <item slot="16" amount="16">piston base</item>
+        <item slot="8" amount="16">log</item>
+        <item slot="26" amount="8">redstone comparator</item>
+        <item slot="17" amount="16">diode</item>		
+    </kit>
+    <kit name="red" parents="spawn">
+        <helmet color="cd0000">leather helmet</helmet>
+        <leggings color="cd0000">leather leggings</leggings>
+        <boots color="cd0000" enchantment="protection fall:2">leather boots</boots>
+    </kit>
+    <kit name="yellow" parents="spawn">
+        <helmet color="0066cc">leather helmet</helmet>
+        <leggings color="0066cc">leather leggings</leggings>
+        <boots color="0066cc" enchantment="protection fall:2">leather boots</boots>
+    </kit> 
+</kits>
+<disabledamage>
+    <damage ally="true" self="false" enemy="false" other="true">block explosion</damage>
+        <damage>fall</damage>  
+</disabledamage>
+<itemremove>
+    <item>iron sword</item>
+    <item>bow</item>
+    <item>chainmail chestplate</item>
+    <item>leather leggings</item>
+    <item>leather boots</item>
+    <item>leather helmet</item>
+    <item>diamond pickaxe</item>
+    <item>shears</item>
+    <item>arrow</item>
+    <item>stained clay</item>
+    <item>stained glass</item>
+    <item>nether fence</item>
+    <item>step</item>
+    <item>ladder</item>
+    <item>trap door</item>
+    <item>stone plate</item>
+    <item>piston base</item>
+    <item>redstone block</item>
+    <item>redstone</item>
+    <item>stone button</item>
+    <item>lever</item>
+    <item>redstone torch on</item>
+    <item>diode</item>
+    <item>redstone comparator</item>
+    <item>dispenser</item>
+</itemremove>
+<toolrepair>
+    <tool>iron sword</tool>
+    <tool>iron axe</tool>
+    <tool>bow</tool>
+    <tool>chainmail chestplate</tool>
+    <tool>leather leggings</tool>
+    <tool>leather boots</tool>
+</toolrepair>
+<killreward>
+    <item amount="1">golden apple</item>
+</killreward>
+<regions>
+    <apply block="deny-all">
+		<negative>
+			<rectangle min="-220,-220" max="220,220"/>
+		<negative>
+    </apply>
+</regions>
+<spawns>
+    <spawn team="yellow" kit="yellow" yaw="0">
+        <block location="-12,84,-161"/>
+        <block location="12,84,-161"/>
+    </spawn>
+    <spawn team="red" kit="red" yaw="0">
+        <block location="-12,84,161"/>
+        <block location="12,84,161"/>
+    </spawn>
+    <default yaw="0">
+        <block location="102,61,-1"/>
+    </default>
+</spawns>
+<hunger>
+    <depletion>off</depletion>
+</hunger>
+<filters>  
+	<filter name="only-red">
+        <team>red</team>
+    </filter>
+    <filter name="only-yellow">
+        <team>yellow</team>
+    </filter>
+</filters>
+<king>
+    <hills>
+        <hill name="Fortress" capture-time="5s" points="1.2" capture-rule="lead">
+            <capture>
+				<cuboid min="-28,90,-16" max="28,100,16"/>
+            </capture>
+            <progress>
+                <cuboid min="-7,90,-5" max="7,100,5"/>
+            </progress>
+            <captured>
+				<cuboid min="0,90,0" max="0,100,0"/>
+            </captured>
+        </hill>
+    </hills>
+</king>
+<score>
+    <limit>1000</limit>
+    <king/>
+</score>
+</map>
