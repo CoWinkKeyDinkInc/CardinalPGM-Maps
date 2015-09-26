@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<map proto="1.3.0">
+    <name>Placid Spring</name>
+    <version>1.0</version>
+    <objective>Grab your enemy's wools and place them on your side.</objective>
+    <authors>
+        <author contribution="Map Idea and Building">9grenier</author>
+        <author contribution="XML, Map Corrections and Map Feedback">Darkcranidos</author>
+    </authors>
+    <contributors>
+        <contributor contribution="Server Hosting, Feedback and Building Help">iLifting</contributor>
+        <contributor contribution="Building Help">Bamby_</contributor>
+        <contributor contribution="Feedback">matic0bascle</contributor>
+        <contributor contribution="Feedback">LoveRokenbok</contributor>
+        <contributor contribution="Minor Aesthetics">Sbongkh</contributor>
+        <contributor contribution="XML Help">jolteony</contributor>
+    </contributors>
+    <rules>
+        <rule>Do not spawn kill/camp.</rule>
+  			<rule>Do not shoot from spawn.</rule>
+    </rules>
+    <teams>
+        <team color="dark red" max="12" max-overfill="15">Red Team</team>
+        <team color="blue" max="12" max-overfill="15">Blue Team</team>
+    </teams>
+    <kits>
+        <kit name="spawn">
+            <item slot="0">stone sword</item>
+            <item slot="1" enchantment="durability:1">bow</item>
+            <item slot="2" enchantment="durability:3">iron pickaxe</item>
+            <item slot="3" enchantment="durability:2">stone axe</item>
+            <item slot="4" amount="64">cooked chicken</item>
+            <item slot="5">golden apple</item>
+            <item slot="6" amount="64">glass</item>
+            <item slot="7" amount="32">log</item>
+            <item slot="8" amount="64">arrow</item>
+            <item slot="30" enchantment="durability:1">iron spade</item>
+						<chestplate damage="-3000">chainmail chestplate</chestplate>
+						<boots damage="-3000">chainmail boots</boots>
+        </kit>
+        <kit name="red" parents="spawn">
+            <helmet color="cd0000">leather helmet</helmet>
+            <leggings color="cd0000">leather leggings</leggings>
+        </kit>
+        <kit name="blue" parents="spawn">
+            <helmet color="0066cc">leather helmet</helmet>
+            <leggings color="0066cc">leather leggings</leggings>
+        </kit>
+    </kits>
+    <spawns>
+        <spawn team="blue" kit="blue" yaw="0">
+            <cuboid name="blue-spawn" min="0.0,19.0,-87.0" max="-1.0,19.0,-87.0"/>
+        </spawn>
+        <spawn team="red" kit="red" yaw="180">
+            <cuboid name="red-spawn" min="0.0,19.0,89.0" max="-1.0,19.0,89.0"/>
+        </spawn>
+        <default yaw="0">
+            <cuboid name="default-spawn" min="-6.0,40.0,-2.0" max="5.0,40.0,4.0"/>
+        </default>
+    </spawns>
+    <wools team="red">
+        <wool color="green">
+            <block>2,7,56</block>
+        </wool>
+        <wool color="lime">
+            <block>-3,7,56</block>
+        </wool>
+    </wools>
+    <wools team="blue">
+        <wool color="pink">
+            <block>-3,7,-54</block>
+        </wool>
+        <wool color="purple">
+            <block>2,7,-54</block>
+        </wool>
+    </wools>
+    <portals>
+        <portal x="@0" y="@6" z="@-52">
+            <cuboid name="blue-portal" min="1.0,23.0,-66.0" max="-2.0,25.0,-65.0"/>
+        </portal>
+        <portal x="@0" y="@6" z="@55">
+            <cuboid name="red-portal" min="-2.0,23.0,68.0" max="1.0,25.0,67.0"/>
+        </portal>
+    </portals>
+    <filters>
+        <filter name="no-void" parents="allow-all">
+            <deny>
+	              <void/>
+            </deny>
+        </filter>
+        <filter name="only-blue" parents="deny-players deny-world">
+            <allow>
+	              <team>blue</team>
+            </allow>
+        </filter>
+        <filter name="only-red" parents="deny-players deny-world">
+            <allow>
+	              <team>red</team>
+            </allow>
+        </filter>
+    </filters>
+    <regions>
+        <apply block="only-blue" use="only-blue">
+	          <rectangle min="11.0,75.0" max="23.0,86.0"/>
+	          <rectangle min="-24.0,75.0" max="-12.0,86.0"/>
+        </apply>
+        <apply enter="only-blue" message="you may not enter your own wool room!">
+	          <rectangle min="11.0,75.0" max="23.0,86.0"/>
+	          <rectangle min="-24.0,75.0" max="-12.0,86.0"/>
+        </apply>
+        <apply block="only-red" use="only-red">
+	          <rectangle min="-24.0,-84.0" max="-12.0,-73.0"/>
+	          <rectangle min="11.0,-84.0" max="23.0,-73.0"/>
+        </apply>
+        <apply enter="only-red" message="You may not enter your own wool room!">
+	          <rectangle min="-24.0,-84.0" max="-12.0,-73.0"/>
+	          <rectangle min="11.0,-84.0" max="23.0,-73.0"/>
+        </apply>
+        <apply block="no-void" message="You may not modify the void area!">
+            <negative>
+	              <rectangle name="bridging1" min="13.0,-11.0" max="23.0,14.0"/>
+	              <rectangle name="bridging2" min="-5.0,-11.0" max="5.0,13.0"/>
+	              <rectangle name="bridging3" min="-23.0,-11.0" max="-13.0,13.0"/>
+            </negative>
+				</apply>
+        <apply block="deny-players deny-world" message="You may not destroy the spawn area!">
+            <cuboid name="blue-spawn-area" min="-8.0,17.0,-88.0" max="6.0,28.0,-63.0"/>
+	          <cuboid name="red-spawn-area" min="-7.0,17.0,65.0" max="6.0,28.0,90.0"/>
+        </apply>
+        <apply block="deny-all" message="You may not destroy the portals!">
+            <rectangle min="-2.0,-55.0" max="1.0,-53.0"/>
+	          <rectangle min="-2.0,55.0" max="1.0,57.0"/>
+        </apply>
+    </regions>
+    <toolrepair>
+        <tool>stone sword</tool>
+        <tool>bow</tool>
+        <tool>iron pickaxe</tool>
+        <tool>stone axe</tool>
+        <tool>iron spade</tool>
+    </toolrepair>
+    <itemremove>
+        <item>leather helmet</item>
+        <item>chainmail chestplate</item>
+        <item>leather leggings</item>
+        <item>wood</item>
+        <item>glass</item>
+        <item>cooked chicken</item>
+        <item>arrow</item>
+    </itemremove>
+    <timelock>on</timelock>
+    <maxbuildheight>32</maxbuildheight>
+    <include src="tutorial.xml"/>
+    <tutorial>
+        <stage title="Capture the Wool">
+            <message>
+                <line>This map is a Capture the Wool (CTW) map.</line>
+                <line>The objective is to grab the wools on the other team's side and return them to your base.</line>
+            </message>
+        <teleport>
+            <point yaw="-90" pitch="90">0,90,1</point>
+        </teleport>
+        </stage>
+        <stage title="Portal">
+            <message>
+                <line>Walk through these portals to enter the playing field.</line>
+                <line>This is a one way portal, once you go through you cannot come back up.</line>
+                <line>You cannot jump off of the spawn platform.</line>
+            </message>
+            <teleport>
+                <point yaw="-130" pitch="0">-4,23,71</point>
+            </teleport>
+        </stage>
+        <stage title="Wool Rooms">
+            <message>
+              <line>These are the wool rooms which hold wools and gear.</line>
+              <line>You cannot enter your own wool room, only the enemy wool rooms.</line>
+              <line>You should defend your own wool rooms or get the enemy's wools.</line>
+            </message>
+            <teleport>
+                <point yaw="42" pitch="0">-9,8,72</point>
+            </teleport>
+        </stage>
+        <stage title="Victory Monuments">
+            <message>
+                <line>These are the victory monuments.</line>
+                <line>You have to place the enemy wools here to win the game.</line>
+            </message>
+            <teleport>
+                <point yaw="0" pitch="0">0,5,52</point>
+            </teleport>
+        </stage>
+    </tutorial>
+</map>
