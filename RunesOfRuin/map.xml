@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<map proto="1.0.0">
+<name>Runes of Ruin</name>
+<version>1.1</version>
+<objective>Leak lava from the enemy's obsidian core</objective>
+<authors>
+	<author contribution="Everything (:D)">Nadastorm</author>
+</authors>
+<contributors>
+    <contributor contribution="XML Coding">Plastix</contributor>
+    <contributor contribution="Map Design">911chandler</contributor>
+	<contributor contribution="Team Spawns">Unphair</contributor>
+	<contributor contribution="Cave Design">Umopaplsdn</contributor>
+</contributors>
+<rules>
+	<rule>No spawn killing</rule>
+	<rule>No team griefing</rule>
+	<rule>No blocking spawns</rule>
+</rules>
+<teams>
+	<team color="blue" max="38">Blue Team</team>
+	<team color="dark red" max="38">Red Team</team>
+</teams>
+<spawns>
+        <spawn team="blue" kit="potion" yaw="180"><cylinder base="422,11,685" radius="3" height="0"/></spawn>
+        <spawn team="red" kit="potion" yaw="180"><cylinder base="314,11,685" radius="3" height="0"/></spawn>
+	<default yaw="180"><cylinder base="368,14,726" radius="3" height="0"/></default>
+</spawns>
+<kits>
+    <kit name="potion">
+        <potion duration="10" amplifier="1">heal</potion>
+    </kit>
+</kits>
+<filters>
+   	<filter name="only-blue" parents="deny-players deny-world">
+		<allow><team>blue</team></allow>
+	</filter>
+	<filter name="only-red" parents="deny-players deny-world">
+		<allow><team>red</team></allow>
+	</filter>
+</filters>
+<maxbuildheight>70</maxbuildheight>
+<regions>
+    <apply enter="only-blue" message="You are not allowed in the enemy team's supply room!">
+        <cuboid min="415,10,675" max="430,16,697"/>
+    </apply>
+    <apply enter="only-red" message="You are not allowed in the enemy team's supply room!">
+        <cuboid min="322,10,675" max="307,16,697"/>
+    </apply>
+    <apply block="deny-all" message="You may not place or break blocks in the supply rooms!">
+        <cuboid min="415,10,674" max="430,18,697"/>>
+        <cuboid min="322,10,674" max="307,18,697"/>
+    </apply>
+    <apply block="deny-all" message="You may not build outside the playable region!">
+        <negative><rectangle min="305,701" max="432,600"/></negative>
+    </apply>
+</regions>
+<cores material="obsidian" leak="4">
+    <core team="red"><cuboid min="315,23,634" max="311,19,630"/></core>
+    <core team="blue"><cuboid min="426,19,634" max="422,23,630"/></core>
+</cores>
+</map>
