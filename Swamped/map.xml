@@ -1,99 +1,106 @@
 <?xml version="1.0"?>
 <map proto="1.3.0">
+<include src="tutorial.xml"/>
 <name>Swamped</name>
-<version>1.0</version>
-<objective>Leak lava from the enemies obsidian core above their tree.</objective>
+<version>1.1.2</version>
+<objective>Destroy the enemy's core in front of their spawn.</objective>
 <authors>
-  <author>Mikeg542</author>
+    <author uuid="e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924" contribution="Overall Map Design"/> <!-- Mikeg542 -->
+    <author uuid="fcbc5806-e7fd-45f1-845a-22f1df93c9bf" contribution="Many details, aesthetics, feedback etc"/> <!-- Minii_ -->
 </authors>
-<contributors>
-  <contributor contribution='map name/minor feedback'>Dvdrummer360</contributor>
-</contributors>
 <teams>
-  <team color="gold" max="50">Orange Team</team>
-  <team color="dark purple" max="50">Purple Team</team>
+    <team color="gold" max="36">Orange</team>
+    <team color="dark purple" max="36">Purple</team>
 </teams>
 <kits>
-  <kit name="spawn">
-    <potion duration="10" amplifier="4">heal</potion>
-    <item slot="0">iron sword</item>
-    <item slot="1">bow</item>
-    <item slot="2">diamond pickaxe</item>
-    <item slot="3">iron axe</item>
-    <item slot="4" amount="32">log</item>
-    <item slot="5" amount="32">cooked fish</item>
-    <item slot="6" amount="15">vines</item>
-    <item slot="7" amount="2">golden apple</item>
-    <item slot="27" amount="64">arrow</item>
-    <item slot="28" amount="64">arrow</item>
-  </kit>
+    <kit name="spawn">
+        <item slot="0">iron sword</item>
+        <item slot="1" enchantment="arrow infinite:1">bow</item>
+        <item slot="28">arrow</item>
+        <item slot="2">diamond pickaxe</item>
+        <item slot="3">iron axe</item>
+        <item slot="4" amount="2">golden apple</item>
+        <item slot="5" amount="32">cooked fish</item>
+        <item slot="6" amount="64" damage="2">log</item>
+        <item slot="7" amount="12">vine</item>
+    </kit>
 </kits>
 <spawns>
-  <spawn team="purple" kit="spawn" yaw="0">
-  <cylinder base="39,11,-55" radius="3" height="0"/>
-</spawn>
-<spawn team="purple" kit="spawn" yaw="0">
-  <cylinder base="-40,11,-55" radius="3" height="0"/>
-</spawn>
-<spawn team="orange" kit="spawn" yaw="180">
-  <cylinder base="40,11,211" radius="3" height="0"/>
-</spawn>
-<spawn team="orange" kit="spawn" yaw="180">
-  <cylinder base="-39,11,211" radius="3" height="0"/>
-</spawn>
-<default yaw="90">
-  <cylinder base="76,41,79" radius="3" height="0"/>
-</default>
+    <default yaw="90">
+        <cylinder base="56,48,11" radius="2" height="0"/>
+    </default>
+    <spawn team="orange" yaw="0" kit="spawn">
+        <cylinder base="-1,4,-129" radius="2" height="0"/>
+    </spawn>
+    <spawn team="purple" yaw="180" kit="spawn">
+        <cylinder base="-2,4,129" radius="2" height="0"/>
+    </spawn>
 </spawns>
-<playable>
-  <rectangle min="-49,-63" max="49,219"/>
-</playable>
-<filters>
-</filters>
 <regions>
-  <!--  Standard Spawn Protection  -->
-  <apply block="deny-all" message="You may not modify the team spawns!">
-    <!-- Orange Team -->
-    <rectangle min="-47,201" max="31,-62"/>
-    <rectangle min="32,201" max="48,218"/>
-    <!-- Purple Team -->
-    <rectangle min="47,-45" max="-31,218"/>
-    <rectangle min="-32,-45" max="-48,-62"/>
-  </apply>
-  <!--  Enchantment Table Protection  -->
-  <apply block="deny-all" message="You may not move or destroy the enchanting table!">
-    <block>0,15,78</block>
-  </apply>
-  <!-- Standard world protection -->
-  <apply block="deny-all" message="You may not build outside the map!">
-    <negative>
-      <rectangle min="-49,-63" max="49,219"/>
-    </negative>
-  </apply>
-  <!-- Disable Fire spread -->
-  <apply block="deny-world">
-    <rectangle min="-49,-63" max="49,219"/>
-  </apply>
+    <apply block="deny-all" message="You may not build outside the map or in spawns!">
+        <negative>
+            <rectangle min="-35,118" max="33,-118"/>
+        </negative>
+    </apply>
 </regions>
-<cores material="obsidian" leak="4">
-  <core team="purple" name="core">
-    <cuboid min="-7,49,13" max="-1,57,7"/>
-  </core>
-  <core team="orange" name="core">
-    <cuboid min="7,49,149" max="1,57,143"/>
-  </core>
-</cores>
-<itemremove>
-  <item>cooked fish</item>
-  <item>iron sword</item>
-  <item>iron axe</item>
-  <item>diamond pickaxe</item>
-</itemremove>
-<toolrepair>
-  <tool>iron sword</tool>
-  <tool>diamond pickaxe</tool>
-  <tool>bow</tool>
-</toolrepair>
-<maxbuildheight>50</maxbuildheight>
 <timelock>on</timelock>
+<maxbuildheight>48</maxbuildheight>
+<cores material="obsidian" leak="4">
+    <core team="orange">
+      <cuboid min="2,24,-87" max="-5,14,-93"/>
+    </core>
+    <core team="purple">
+        <cuboid min="2,24,87" max="-5,14,93"/>
+    </core>
+</cores>
+<toolrepair>
+    <tool>iron axe</tool>
+    <tool>iron sword</tool>
+    <tool>diamond pickaxe</tool>
+    <tool>bow</tool>
+    <tool>arrow</tool>
+</toolrepair>
+<itemremove>
+    <item>cooked fish</item>
+    <item>seeds</item>
+    <item>vine</item>
+</itemremove>
+<tutorial>
+    <stage title="Destroy the Core">
+        <message>
+            <line>`rThis map is a `a`lDestroy the Core `r(DTC) map.</line>
+            <line>`rThe objective is to leak lava from the enemy's `5obsidian `rcore.</line>
+        </message>
+        <teleport>
+            <point yaw="90" pitch="50">42,48,0</point>
+        </teleport>
+    </stage>
+    <stage title="Spawn">
+        <message>
+            <line>`rYou spawn inside your base with your basic gear provided.</line>
+            <line>`rThe upper floor contains some additional supplies for defenses and bridges</line>
+        </message>
+        <teleport>
+            <point yaw="45" pitch="45">11,18,110</point>
+        </teleport>
+    </stage>
+    <stage title="Armor">
+        <message>
+            <line>`bIron blocks are available throughout the map for buckets and armor</line>
+            <line>The main supply is visible here, straight ahead and down from the spawn.</line>
+        </message>
+        <teleport>
+            <point yaw="135" pitch="0">-1,2,100</point>
+        </teleport>
+    </stage>
+    <stage title="The Core">
+        <message>
+            <line>This is `5obsidian `rcore, break your enemy's `5obsidian `rcore and leak the `clava `rfrom inside the core to win.</line>
+            <line>`rMake sure to defend your own to stop the enemy team from winning!</line>
+        </message>
+        <teleport>
+            <point yaw="0" pitch="0">-1,20,76</point>
+        </teleport>
+    </stage>
+</tutorial>
 </map>
