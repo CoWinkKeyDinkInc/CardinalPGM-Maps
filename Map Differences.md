@@ -1,5 +1,5 @@
 # Map Differences
-These are listed changes that were made the original sources/downloads.  Check it out.
+These are listed changes that were made to the original sources/downloads.  Check it out.
 
 ## A team gear map
 A team gear map originally made by Not_Kroest.  Recreated by CoWinkKeyDinkInc.
@@ -25,10 +25,7 @@ Has been pruned and unneeded files were deleted.
 Unneeded files were deleted.
 
 ## Swamped
-Has been pruned and unneeded files were deleted.
-
-## Swamped Mini
-Unneeded files were deleted.
+Origional version of Swamped is now replaced by Swamped Mini.
 
 ## Tenebrous
 Unneeded files were deleted.
