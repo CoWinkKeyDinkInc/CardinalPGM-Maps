@@ -95,7 +95,7 @@
     <mode after="10s" material="air"/>
 </modes>
 <broadcasts>
-<alert after="1s">`aYou can download this map here: github.com/Prodigy4532/AkariMaps | Thanks for use my maps :)</alert>
+<alert after="1s">`aYou can download this map here: github.com/CoWinkKeyDinkInc/CardinalPGM-Maps | Thanks for use my maps :)</alert>
 </broadcasts>
 <blitz/>
 </map>
