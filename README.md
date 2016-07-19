@@ -35,6 +35,10 @@ What this repository does is try to update and fix the maps so they can play bet
  - Swamped
  - Swamped Mini
  - Tenbrous
+ 
+### Mitchiii_
+ - Deadwater
+ - Deadwater Pirate's Grotto
 
 ### Not_Kroest
  - Dry DTC
