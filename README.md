@@ -8,9 +8,8 @@ What this repository does is try to update and fix the maps so they can play bet
 ## How do I contribute?
  - If you have a map that you want to be updated or fixed, submit a pull request!
  - If the pull request is a fix in a map, please only have one map involved in a commit and include pictures on aesthetic changes.
- - If the pull request is a fix in a map (not XML), please only have one map involved in a commit and include pictures on aesthetic changes.
  - Use proper spacing and formatting in XML, spacing will make XML files much easier to read.
- - Put this repo on your CardinalPGM server to test for errors, we're currently waiting for [this](https://github.com/twizmwazin/CardinalPGM/issues/692) feature or a [plugin](https://oc.tc/forums/topics/55a15d02c29635a2e40059ded) to be made so that testing maps can be easier.
+ - Put this repo on your CardinalPGM server to test for errors.
 
 ## How do I get my map on this repository?
  - The only requirement for maps to be considered adding to the repo is that there will be no conflicts arising from the map being added. You must be the author of a map, or have permission to do so to submit a pull request containing the map.  You don't need an XML file to submit a map.
@@ -35,7 +34,7 @@ What this repository does is try to update and fix the maps so they can play bet
  - Swamped
  - Swamped Mini
  - Tenbrous
- 
+
 ### Mitchiii_
  - Deadwater
  - Deadwater Pirate's Grotto
@@ -46,4 +45,4 @@ What this repository does is try to update and fix the maps so they can play bet
  - A team gear map
 
 ## An important note
- - Some forks of this repository may contain a huge list of maps that are from OCN. We won't accept these as they're usually obtained without permission.  We have absolutely nothing to do with these forks, so if you have issues, send it to them.
+Some forks of this repository may contain a huge list of maps that are from OCN. We won't accept these as they're usually obtained without permission.  We have absolutely nothing to do with these forks, so if you have issues, send it to them.
