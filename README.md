@@ -39,7 +39,7 @@ What this repository does is try to update and fix the maps so they can play bet
  - Deadwater
  - Deadwater Pirate's Grotto
 
-### Not_Kroest
+### KroestV2
  - Dry DTC
  - King of the Castle
  - A team gear map
