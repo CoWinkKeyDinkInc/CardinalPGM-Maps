@@ -1,9 +1,9 @@
 # CardinalPGM-Maps
 The sequel to OCN-Maps, but like all sequels it's not as good.
 
-A ton of maps are submitted on the OCN forums as public downloads. Unfortunately, lots of these maps don't get any further than the forums, including many good ones that could play great.
+A ton of maps are submitted on the OCN forums as public downloads. Unfortunately, lots of these maps don't get any further than the forums, including many good ones that could play great.  Nowadays, the server is going to disappear anyways. :cry:
 
-What this repository does is try to update and fix the maps so they can play better, look better, and are proven to work. We'll also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on OCN!
+What this repository does is try to update and fix the maps so they can play better, look better, and are proven to work. We'll also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on OCN!  Since OCN is going soon, many maps will fizzle out and break.  We want to reduce the number of great maps that will die out and become unused.
 
 ## How do I contribute?
  - If you have a map that you want to be updated or fixed, submit a pull request!
@@ -21,6 +21,10 @@ What this repository does is try to update and fix the maps so they can play bet
 ![pic](http://puu.sh/gPEj4.png)
 
 ## Credits (Who allowed these maps here)
+
+All maps are under this creative commons license unless otherwise specified.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 ### CoWinkKeyDinkInc
  - Oculo
  - Q\*Boid
@@ -41,7 +45,10 @@ What this repository does is try to update and fix the maps so they can play bet
 
 ### KroestV2
  - Dry DTC
+ - Fairy Tales 2: Mini
+ <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/></a>
  - King of the Castle
+ - Ultra Twizz  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/></a>
  - A team gear map
 
 ### Spintown
