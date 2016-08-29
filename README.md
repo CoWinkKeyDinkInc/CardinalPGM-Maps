@@ -44,5 +44,8 @@ What this repository does is try to update and fix the maps so they can play bet
  - King of the Castle
  - A team gear map
 
+### Spintown
+ - Table Block
+
 ## An important note
 Some forks of this repository may contain a huge list of maps that are from OCN. We won't accept these as they're usually obtained without permission.  We have absolutely nothing to do with these forks, so if you have issues, send it to them.
