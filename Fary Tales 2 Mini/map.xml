@@ -10,18 +10,18 @@
 	<contributor uuid="2e28d256-4656-4f37-bcdc-5fab21b0f70f" contribution="Creator of 'fairy Tales 2: A Tale or Two' "/> <!-- D347HxD -->
 </contributors>
 <teams>
-    <team color="red" max="28" max-overfill="32">red</team>
-    <team color="green" max="28" max-overfill="32">green</team>
+    <team color="red" max="28" max-overfill="32">Red</team>
+    <team color="green" max="28" max-overfill="32">Green</team>
 </teams>
 <spawns>
     <spawns kit="red">
         <spawn team="red" kit="red">
-            <point yaw="-180">0.5,9,83.5</point>	
+            <point yaw="-180">0.5,9,83.5</point>
         </spawn>
     </spawns>
     <spawns kit="green">
         <spawn team="green" kit="green">
-            <point yaw="0">0.5,9,-82.5</point>	
+            <point yaw="0">0.5,9,-82.5</point>
         </spawn>
     </spawns>
     <default yaw="90">
@@ -41,8 +41,8 @@
         <item slot="7" amount="64">glass</item>
         <item slot="16" amount="64">arrow</item>
         <chestplate enchantment="protection projectile:2" unbreakable="true">chainmail chestplate</chestplate>
-        <leggings unbreakable="true">chainmail leggings</leggings>		
-        <potion duration="5" amplifier="3">damage resistance</potion>	
+        <leggings unbreakable="true">chainmail leggings</leggings>
+        <potion duration="5" amplifier="3">damage resistance</potion>
     </kit>
     <kit name="green" parents="spawn">
         <helmet color="667F33" unbreakable="true">leather helmet</helmet>
@@ -80,7 +80,7 @@
             <team>green</team>
             <filter name="allow-some"/>
         </all>
-    </filter>	
+    </filter>
 	<filter name="only-red-usage">
 		<not>
 			<all>
@@ -102,7 +102,7 @@
 				<team>red</team>
 			</all>
 		</not>
-	</filter>	
+	</filter>
 </filters>
 <regions>
     <union name="red-wool-rooms">
@@ -117,7 +117,7 @@
     </apply>
     <union name="green-wool-rooms">
 		<rectangle name="yellow-room" min="-39,48" max="-50,59"/>
-		<rectangle name="red-room" min="40,48" max="51,59"/>	
+		<rectangle name="red-room" min="40,48" max="51,59"/>
     </union>
     <apply block-break="only-green-sp" block-place="deny-all" use="only-green-usage">
         <region name="green-wool-rooms"/>
@@ -173,7 +173,7 @@
 	</apply>
 	<apply block="blue-wool" use="only-blue-usage">
 		<region name="red-wool-rooms"/>
-	</apply>			
+	</apply>
 </regions>
 <toolrepair>
     <tool>stone sword</tool>
