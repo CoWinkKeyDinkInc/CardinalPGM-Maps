@@ -1,9 +1,9 @@
 # CardinalPGM-Maps
 The sequel to OCN-Maps, but like all sequels it's not as good.
 
-A ton of maps are submitted on the OCN forums as public downloads. Unfortunately, lots of these maps don't get any further than the forums, including many good ones that could play great.  Nowadays, the server is going to disappear anyways. :cry:
+A ton of maps are submitted on the OCN forums as public downloads. Unfortunately, lots of these maps don't get any further than the forums, including many good ones that could play great.
 
-What this repository does is try to update and fix the maps so they can play better, look better, and are proven to work. We'll also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on OCN!  Since OCN is going soon, many maps will fizzle out and break.  We want to reduce the number of great maps that will die out and become unused.
+What this repository does is try to update and fix the maps so they can play better, look better, and are proven to work. We'll also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on OCN!
 
 ## How do I contribute?
  - If you have a map that you want to be updated or fixed, submit a pull request!
