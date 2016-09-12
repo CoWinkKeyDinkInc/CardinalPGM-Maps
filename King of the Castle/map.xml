@@ -4,7 +4,7 @@
 <version>1.0.0</version>
 <objective>Capture and hold the Fortress</objective>
 <authors>
-    <author uuid="c26e7a7f-b4ce-4ebc-ac4d-f60691915d23"/> <!-- Kroest -->
+    <author uuid="65722be1-29fd-4e7d-a47d-94ed616ed880"/> <!-- KroestV2 -->
 </authors>
 <teams>
     <team color="red" max="20" max-overfill="22">red</team>
@@ -18,7 +18,7 @@
         <item slot="4" amount="1">golden apple</item>
         <item slot="28" amount="1">arrow</item>
         <potion duration="10">damage resistance</potion>
-        <chestplate enchantment="protection explosions:2">chainmail chestplate</chestplate>		
+        <chestplate enchantment="protection explosions:2">chainmail chestplate</chestplate>
         <item slot="2" damage="-3000" attributes="generic.attackDamage:add:7">diamond pickaxe</item>
         <item slot="27" damage="-3000" name="`6TNT Defuser" lore="`7Right click to defuse team griefer's TNT|`7Does not work in `9water|`7Use `a/report `7to alert the staff">shears</item>
         <item slot="11" amount="32">nether fence</item>
@@ -38,7 +38,7 @@
         <item slot="16" amount="16">piston base</item>
         <item slot="8" amount="16">log</item>
         <item slot="26" amount="8">redstone comparator</item>
-        <item slot="17" amount="16">diode</item>		
+        <item slot="17" amount="16">diode</item>
     </kit>
     <kit name="red" parents="spawn">
         <helmet color="cd0000">leather helmet</helmet>
@@ -49,11 +49,11 @@
         <helmet color="0066cc">leather helmet</helmet>
         <leggings color="0066cc">leather leggings</leggings>
         <boots color="0066cc" enchantment="protection fall:2">leather boots</boots>
-    </kit> 
+    </kit>
 </kits>
 <disabledamage>
     <damage ally="true" self="false" enemy="false" other="true">block explosion</damage>
-        <damage>fall</damage>  
+        <damage>fall</damage>
 </disabledamage>
 <itemremove>
     <item>iron sword</item>
@@ -116,7 +116,7 @@
 <hunger>
     <depletion>off</depletion>
 </hunger>
-<filters>  
+<filters>
 	<filter name="only-red">
         <team>red</team>
     </filter>

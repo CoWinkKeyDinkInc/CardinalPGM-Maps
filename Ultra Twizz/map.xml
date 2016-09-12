@@ -5,7 +5,7 @@
 <objective>Capture the wool and return it to your victory monument.</objective>
 <authors>
     <author uuid="5198dc37-537f-4ea5-8ee8-1e0952d4a36b" contribution="Building."/> <!-- _3Each -->
-    <author uuid="65722be1-29fd-4e7d-a47d-94ed616ed880" contribution="Layout, landscape."/> <!-- Kroest -->
+    <author uuid="65722be1-29fd-4e7d-a47d-94ed616ed880" contribution="Layout, landscape."/> <!-- KroestV2 -->
 </authors>
 <contributors>
     <contributor uuid="6d24722c-dba4-4224-9d14-b3d08a8d9620" contribution="Trees."/> <!-- mrPetrus -->
@@ -27,8 +27,8 @@
         <item slot="7" amount="32">ladder</item>
         <item slot="8" amount="32">golden carrot</item>
         <item slot="28" amount="1">arrow</item>
-        <potion duration="5" amplifier="3">heal</potion>	
-        <chestplate enchantment="protection projectile:2" damage="-3000">chainmail chestplate</chestplate>		
+        <potion duration="5" amplifier="3">heal</potion>
+        <chestplate enchantment="protection projectile:2" damage="-3000">chainmail chestplate</chestplate>
     </kit>
     <kit name="pink" parents="spawn">
         <leggings  color="FF5CFA" damage="-3000">leather leggings</leggings>
@@ -122,7 +122,7 @@
 		<rectangle name="orange-wool" min="-119,0" max="-142,-11"/>
 	</union>
 	<!-- yellow must enter -->
-    <union name="yellow-wools">		
+    <union name="yellow-wools">
 		<rectangle name="pink-wool" min="120,0" max="143,12"/>
 		<rectangle name="purple-wool" min="120,0" max="143,-11"/>
 	</union>
@@ -135,7 +135,7 @@
     </apply>
 	<apply block="deny-all">
 		<region name="yellow-base"/>
-        <region name="pink-base"/>	
+        <region name="pink-base"/>
 	</apply>
     <apply enter="anti-grief-pink" message="You cannot enter your own wool room!">
         <region name="pink-wools"/>
@@ -162,7 +162,7 @@
     <wool color="purple">
         <block>-101,36,0</block>
     </wool>
-</wools>    
+</wools>
 <wools team="pink">
     <wool color="orange">
         <block>101,36,0</block>

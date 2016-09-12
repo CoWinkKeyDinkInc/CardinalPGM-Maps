@@ -4,7 +4,7 @@
 <version>2.0.0</version>
 <objective>Retrieve the wool from the enemy's side and place it on your team's monument</objective>
 <authors>
-    <author uuid="c26e7a7f-b4ce-4ebc-ac4d-f60691915d23"/> <!-- Kroest -->
+    <author uuid="65722be1-29fd-4e7d-a47d-94ed616ed880"/> <!-- KroestV2 -->
 </authors>
 <contributors>
 	<contributor uuid="2e28d256-4656-4f37-bcdc-5fab21b0f70f" contribution="Creator of 'fairy Tales 2: A Tale or Two' "/> <!-- D347HxD -->
