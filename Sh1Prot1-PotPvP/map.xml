@@ -10,9 +10,9 @@
     <team id="red-player" color="dark red" max="1" max-overfill="1">Red Player</team>
     <team id="blue-player" color="blue" max="1" max-overfill="1">Blue Player</team>
 </teams>
-  <kits>
+<kits>
     <kit name="all" potion-particles="false">
-      <potion duration="oo" ambient="true">night vision</potion>
+        <potion duration="oo" ambient="true">night vision</potion>
     </kit>
     <kit name="team" parents="all">
         <item slot="0" enchantment="durability:3;damage all:1">diamond sword</item>
@@ -53,18 +53,18 @@
         <item slot="8" amount="32">bread</item>
     </kit>
     <kit name="red-gear" parents="team">
-      <helmet locked="true" enchantment="durability:3;protection environmental:1">diamond helmet</helmet>
-      <chestplate locked="true" enchantment="durability:3;protection environmental:1">diamond chestplate</chestplate>
-      <leggings locked="true" enchantment="durability:3;protection environmental:1">diamond leggings</leggings>
-      <boots locked="true" enchantment="durability:3;protection environmental:1">diamond boots</boots>
+        <helmet locked="true" enchantment="durability:3;protection environmental:1">diamond helmet</helmet>
+        <chestplate locked="true" enchantment="durability:3;protection environmental:1">diamond chestplate</chestplate>
+        <leggings locked="true" enchantment="durability:3;protection environmental:1">diamond leggings</leggings>
+        <boots locked="true" enchantment="durability:3;protection environmental:1">diamond boots</boots>
     </kit>
     <kit name="blue-gear" parents="team">
-      <helmet locked="true" enchantment="durability:3;protection environmental:1">diamond helmet</helmet>
-      <chestplate locked="true" enchantment="durability:3;protection environmental:1">diamond chestplate</chestplate>
-      <leggings locked="true" enchantment="durability:3;protection environmental:1">diamond leggings</leggings>
-      <boots locked="true" enchantment="durability:3;protection environmental:1">diamond boots</boots>
+        <helmet locked="true" enchantment="durability:3;protection environmental:1">diamond helmet</helmet>
+        <chestplate locked="true" enchantment="durability:3;protection environmental:1">diamond chestplate</chestplate>
+        <leggings locked="true" enchantment="durability:3;protection environmental:1">diamond leggings</leggings>
+        <boots locked="true" enchantment="durability:3;protection environmental:1">diamond boots</boots>
     </kit>
-  </kits>
+</kits>
 <spawns pitch="0">
     <default yaw="-135" kit="all">
         <cylinder base="0,36,0" radius="1" height="1"/>

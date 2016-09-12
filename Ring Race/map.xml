@@ -3,7 +3,7 @@
 <time result="objectives">60m</time>
 <name>Ring Race</name>
 <version>1.6.4</version>
-<objective>Capture the wool from the enemies wool rooms and return them to your victory monument</objective>
+<objective>Capture the wool from the enemies wool rooms and return them to your victory monument.</objective>
 <authors>
     <author uuid="e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924"/> <!-- Mikeg542 -->
 </authors>

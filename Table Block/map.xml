@@ -13,7 +13,6 @@
     <contributor uuid="2fa0ea62-ca7f-477c-95d0-bff5be0f65b4" contribution="WorldEdit"/><!--8BitHer0-->
     <contributor uuid="bb628049-e368-4b1c-b8aa-d4557ae9416b" contribution="Provided Feedback"/><!--Anthonny-->
 </contributors>
-<gamemode>mixed</gamemode>
 <!--Teams-->
 <teams>
     <team id="yellow-team" color="yellow" max="32" max-overfill="40">Yellow</team>
