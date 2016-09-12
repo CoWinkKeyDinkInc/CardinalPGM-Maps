@@ -4,8 +4,8 @@
 <version>1.0.0</version>
 <objective>Capture the wool from the enemies wool rooms and return them to your victory monument</objective>
 <authors>
-    <author>Mikeg542</author>
-    <author>skippy369</author>
+    <author uuid="e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924"/> <!-- Mikeg542 -->
+    <author uuid="c95e0a45-8208-430a-a1a2-1e27333445a4"/> <!-- skippy369 -->
 </authors>
 <teams>
     <team color="dark aqua" max="32">Cyan Team</team>
