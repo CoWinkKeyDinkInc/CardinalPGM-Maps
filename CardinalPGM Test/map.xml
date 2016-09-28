@@ -26,7 +26,8 @@
 </spawns>
 <kits>
     <kit id="spawn" force="true">
-        <item slot="1" enchantment="arrow infinite:1">bow</item>
+        <!-- <item slot="1" enchantment="arrow infinite:1">bow</item> -->
+        <item slot="1" amount="64">ender pearl</item>
         <item slot="8" amount="32" material="bread"/>
         <effect duration="5" amplifier="1">instant_health</effect>
     </kit>
