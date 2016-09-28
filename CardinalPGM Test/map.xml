@@ -101,9 +101,9 @@
     </control-point>
 </control-points>
 -->
-<modifybowprojectile>
+<!--<modifybowprojectile>
     <projectile>EnderPearl</projectile>
-</modifybowprojectile>
+</modifybowprojectile> -->
 <broadcast>
     <alert after="1s">
       This map was designed to test out CardinalPGM and other PGM clones, it tests out most of the common features on modern OCN maps.
