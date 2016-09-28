@@ -88,7 +88,7 @@
 
 <!-- Add filters and stuff here -->
 
-<control-points capture-players="lead" incremental="true" show-progress="true">
+<!--<control-points capture-players="lead" incremental="true" show-progress="true">
     <control-point name="Left Base" capture-time="5">
         <capture><rectangle min="51,-2" max="63,-8"/></capture>
         <progress><rectangle min="51,-2" max="63,-8"/></progress>
@@ -100,7 +100,7 @@
         <captured><rectangle min="57,2" max="63,8"/></captured>
     </control-point>
 </control-points>
-
+-->
 <modifybowprojectile>
     <projectile>EnderPearl</projectile>
 </modifybowprojectile>
