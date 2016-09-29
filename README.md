@@ -10,6 +10,7 @@ What this repository does is try to update and fix the maps so they can play bet
  - If the pull request is a fix in a map, please only have one map involved in a commit and include pictures on aesthetic changes.
  - Use proper spacing and formatting in XML, spacing will make XML files much easier to read.
  - Put this repo on your CardinalPGM server to test for errors.
+ - Make sure to enable the `displayMapLoadErrors` property in `config.yml`, which can be located in the `Cardinal` folder which is inside the `plugins` folder.
 
 ## How do I get my map on this repository?
  - The only requirement for maps to be considered adding to the repo is that there will be no conflicts arising from the map being added. You must be the author of a map, or have permission to do so to submit a pull request containing the map.  You don't need an XML file to submit a map.
