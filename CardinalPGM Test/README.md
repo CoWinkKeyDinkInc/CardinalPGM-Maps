@@ -23,13 +23,11 @@ This map currently tests the following:
 
 ### Other game features
  - Item regeneration
- - Custom item drops
- - Ender bows
  - Mob spawners
 
-
+## Creating spawners
 Creating custom item and mob spawners is really easy!!  Use this site [here](https://mcstacker.bimbimma.com/)
 to go and make custom mobs in-game!!  Some cases may require a command block to use.
 
 **Note:** To make wool and other items spawn properly, it is suggested that `SpawnRange`, `RequiredPlayerRange`
-and `MaxNearbyEntities` are all set with a defined number.  `RequiredPlayerRange` only works if `MaxNearbyEntities` is set. 
+and `MaxNearbyEntities` are all set with a defined number.  `RequiredPlayerRange` only works if `MaxNearbyEntities` is set.

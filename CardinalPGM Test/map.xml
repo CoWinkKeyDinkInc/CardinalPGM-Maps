@@ -84,7 +84,6 @@
     <limit>100</limit>
     <kills>3</kills> <!-- +3 points for every kill -->
     <deaths>2</deaths> <!-- -2 points for accidentally dying -->
-    <box points="2" filter="only-red">
 </score>
 
 <!-- Add filters and stuff here -->
