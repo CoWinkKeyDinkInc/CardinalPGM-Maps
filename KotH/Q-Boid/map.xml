@@ -50,7 +50,7 @@
         <cuboid min="1017,12,-374" max="1015,12,-371"/>
     </spawn>
     <default yaw="134">
-        <block="1086,8,-387"/>
+        <block>1086,8,-387</block>
     </default>
 </spawns>
 <killreward>
@@ -96,7 +96,7 @@
     <tool>shears</tool>
 </toolrepair>
 <itemremove>
-    <item>arrow<item>
+    <item>arrow</item>
     <item>leather helmet</item>
     <item>leather chestplate</item>
     <item>leather leggings</item>
