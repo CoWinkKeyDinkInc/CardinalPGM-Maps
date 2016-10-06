@@ -13,14 +13,14 @@
     <team id="blue" color="blue" max="1">Blue Tester</team>
 </teams>
 <spawns>
-    <spawn team="red" kit="red">
+    <spawn team="red" kit="red" safe="true">
         <regions yaw="-90">
-            <point id="red-spawn">-2,12,2</point>
+            <point id="red-spawn">-1.5,12,2.5</point>
         </regions>
     </spawn>
-    <spawn team="blue" kit="blie">
+    <spawn team="blue" kit="blue" safe="true">
         <regions yaw="-90">
-            <point id="blue-spawn">-2,12,-2</point>
+            <point id="blue-spawn">-1.5,12,-1.5</point>
         </regions>
     </spawn>
 </spawns>
@@ -54,12 +54,12 @@
 <destroyables name="Monument" materials="obsidian" completion="100%" mode-changes="true">
     <destroyable owner="red">
        <region>
-           <cuboid min="12,2,2" max="12,2,3"/>
+           <cuboid min="12,2,2" max="12,3,2"/>
        </region>
     </destroyable>
     <destroyable owner="blue">
        <region>
-           <cuboid min="12,2,-2" max="12,2,-3"/>
+           <cuboid min="12,2,-2" max="12,3,-2"/>
         </region>
     </destroyable>
 </destroyables>
