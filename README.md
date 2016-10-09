@@ -3,7 +3,18 @@ The sequel to OCN-Maps, but like all sequels it's not as good.
 
 A ton of maps are submitted on the OCN forums as public downloads. Unfortunately, lots of these maps don't get any further than the forums, including many good ones that could play great.
 
-What this repository does is try to update and fix the maps so they can play better, look better, and are proven to work. We'll also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on OCN!
+What this repository does is try to update and fix the maps so they can play better, look better, and are proven to work. We will also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on OCN!
+
+## How to install
+The best way to install CardinalPGM-Maps into your CardinalPGM server is to clone the repository into the server's `maps` folder. This makes it much easier to recieve updates with a single click or command from your faviourite [Git client](https://git-scm.com/downloads/guis). Much better than downloading entire repo as a zip, and then removing the old copy and putting in the new one. Here's how do to it!
+ 1. Download and install [GitKraken](https://www.gitkraken.com/)
+ 2. Click on the green clone or download button, and copy the URL
+ 3. Go to File > Clone Repo
+ 4. Paste the URL into the URL text box, locate the maps folder and click on the clone repo button
+ 5. To update the maps repository, open up the repo in GitKraken and click pull
+ 
+### How to fork
+Repeat the same steps as seen above, but fork this repo, and use the link given on the fork repository.
 
 ## How do I contribute?
  - If you have a map that you want to be updated or fixed, submit a pull request!
