@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <map proto="1.3.3">
-<name>Q*Boid</name>
+<name>KotH Test (Doesn't work)</name>
 <version>1.0.0</version>
 <objective>Capture and kill players to get 300 points to win the game.</objective>
 <authors>
@@ -171,6 +171,7 @@
                 <cuboid min="0,0,0" max="0,0,0"/>
             </captured>
         </hill>
+        <!--
         <hill name="Cube 4" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
             <capture>
                 <cuboid min="1036,36,-404" max="1043,36,-397"/>
@@ -446,6 +447,7 @@
                 <cuboid min="0,0,0" max="0,0,0"/>
             </captured>
         </hill>
+      -->
     </hills>
 </king>
 </map>
