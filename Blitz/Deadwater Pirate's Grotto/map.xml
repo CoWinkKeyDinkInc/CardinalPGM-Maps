@@ -7,12 +7,11 @@
     <author uuid="f690a591-348b-482e-a18d-7779d0c0a28c" />
     <!--   mitchiii_   -->
 </authors>
-
 <blitz />
 <time>6m</time>
 <teams>
-    <team id="blueTeam" color="blue"     max="12">Blue</team>
-    <team id="redTeam"  color="dark red" max="12">Red</team>
+    <team id="blue" color="blue" max="12">Blue</team>
+    <team id="red" color="dark red" max="12">Red</team>
 </teams>
 <kits>
     <kit id="main">
@@ -25,12 +24,12 @@
         <chestplate enchantment="protection environmental" unbreakable="true">iron chestplate</chestplate>
     </kit>
     <kit id="blueKit" parents="main">
-        <leggings color="0066cc" unbreakable="true">leather leggings</leggings>
-        <boots color="0066cc" enchantment="protection fall" unbreakable="true">leather boots</boots>
+        <leggings color="0000FF" unbreakable="true">leather leggings</leggings>
+        <boots color="0000FF" enchantment="protection fall" unbreakable="true">leather boots</boots>
     </kit>
     <kit id="redKit" parents="main">
-        <leggings color="cd0000" unbreakable="true">leather leggings</leggings>
-        <boots color="cd0000" enchantment="protection fall" unbreakable="true">leather boots</boots>
+        <leggings color="8B0000" unbreakable="true">leather leggings</leggings>
+        <boots color="8B0000" enchantment="protection fall" unbreakable="true">leather boots</boots>
     </kit>
     <kit id="giveWither" force="true">
         <potion duration="oo" amplifier="1">wither</potion>
@@ -44,19 +43,22 @@
     </kit>
 </kits>
 <spawns>
-    <spawn team="blueTeam" kit="blueKit" region="blueSpawn" yaw="180" />
-    <spawn team="redTeam"  kit="redKit"  region="redSpawn" yaw="0" />
-    <default region="defaultSpawn" yaw="-35" />
+	<default yaw="-67">
+		<point>61.5,49,0.5</point>
+	</default>
+	<spawn team="blue" kit="blueKit" yaw="180">
+		<point>112.5,29,62.5</point>
+	</spawn>
+	<spawn team="red" kit="redKit" yaw="0">
+		<point>112.5,29,-62.5</point>
+	</spawn>
 </spawns>
 <filters>
-    <team id="onlyBlue">blueTeam</team>
-    <team id="onlyRed">redTeam</team>
+    <team id="onlyBlue">blue</team>
+    <team id="onlyRed">red</team>
     <random id="random50">0.5</random>
 </filters>
 <regions>
-    <point id="blueSpawn">112.5,29,62.5</point>
-    <point id="redSpawn">112.5,29,-62.5</point>
-    <point id="defaultSpawn">60.5,49,0.5</point>
     <above id="above36" y="35"/>
     <union id="water">
         <cuboid id="blue-poison" min="120,27,62"  max="107,29,55" />

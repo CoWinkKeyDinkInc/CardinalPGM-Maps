@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <map proto="1.3.0">
 <name>Oculo</name>
 <version>1.0.2</version>
@@ -25,7 +24,7 @@
         <cuboid min="510,30,455" max="512,60,471"/>
     </spawn>
     <default yaw="-90">
-        <point>555,53,494</point>
+        <point>555.5,53.0,493.5</point>
     </default>
 </spawns>
 <kits>

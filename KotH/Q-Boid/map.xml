@@ -1,453 +1,169 @@
 <?xml version="1.0"?>
 <map proto="1.3.3">
-<name>KotH Test (Doesn't work)</name>
+<name>Q*Boid</name>
 <version>1.0.0</version>
-<objective>Capture and kill players to get 300 points to win the game.</objective>
+<objective>Capture and kill players until getting 3200 points to win the game.</objective>
 <authors>
-    <author uuid="5c79d2c9-a4f0-4343-a84b-e1720f13009b"/>
-    <!-- CoWinkKeyDinkInc -->
+	<author uuid="5c79d2c9-a4f0-4343-a84b-e1720f13009b"/>
+	<!-- CoWinkKeyDinkInc -->
 </authors>
 <teams>
-    <team color="yellow" max="16">Yellow Team</team>
-    <team color="lime" max="16">Lime Team</team>
+	<team id="yellow" color="yellow" max="16">Yellow Team</team>
+	<team id="lime" color="green" max="16">Lime Team</team>
 </teams>
 <kits>
-    <kit name="spawn" force="true">
-        <item slot="0" damage="-3000">stone sword</item>
-        <item slot="1" damage="-3000">bow</item>
-        <item slot="6" amount="32">golden carrot</item>
-        <item slot="7" amount="2">golden apple</item>
-        <item slot="28" amount="16">arrow</item>
-        <leggings>iron leggings</leggings>
-        <item slot="4" damage="-3000">shears</item>
-        <item slot="5" amount="10">vine</item>
-        <potion duration="oo" amplifier="1" ambient="true">fast digging</potion>
-    </kit>
-    <kit name="yellow" parents="spawn">
-        <helmet color="e5e533">leather helmet</helmet>
-        <chestplate color="e5e533">leather chestplate</chestplate>
-        <boots enchantment="protection fall:1" color="e5e533">leather boots</boots>
-        <item slot="2" damage="4" amount="15">stained glass</item>
-        <item slot="3" damage="4" amount="8">wool</item>
-    </kit>
-    <kit name="lime" parents="spawn">
-        <helmet color="33c633">leather helmet</helmet>
-        <chestplate color="33c633">leather chestplate</chestplate>
-        <boots enchantment="protection fall:1" color="33c633">leather boots</boots>
-        <item slot="2" damage="5" amount="15">stained glass</item>
-        <item slot="3" damage="5" amount="8">wool</item>
-    </kit>
+	<kit name="spawn" force="true">
+		<item slot="0" damage="-3000">stone sword</item>
+		<item slot="1" damage="-3000">bow</item>
+		<item slot="6" amount="32">golden carrot</item>
+		<item slot="7" amount="2">golden apple</item>
+		<item slot="28" amount="16">arrow</item>
+		<leggings>iron leggings</leggings>
+		<item slot="4" damage="-3000">shears</item>
+		<item slot="5" amount="10">vine</item>
+		<potion duration="oo" amplifier="1" ambient="true">fast digging</potion>
+	</kit>
+	<kit name="yellow" parents="spawn">
+		<helmet color="FFFF00">leather helmet</helmet>
+		<chestplate color="FFFF00">leather chestplate</chestplate>
+		<boots enchantment="protection fall:1" color="FFFF00">leather boots</boots>
+		<item slot="2" damage="4" amount="15">stained glass</item>
+		<item slot="3" damage="4" amount="8">wool</item>
+	</kit>
+	<kit name="lime" parents="spawn">
+		<helmet color="32CD32">leather helmet</helmet>
+		<chestplate color="32CD32">leather chestplate</chestplate>
+		<boots enchantment="protection fall:1" color="32CD32">leather boots</boots>
+		<item slot="2" damage="5" amount="15">stained glass</item>
+		<item slot="3" damage="5" amount="8">wool</item>
+	</kit>
 </kits>
 <spawns>
-    <spawn team="yellow" kit="yellow" yaw="0">
-        <cuboid min="1069,26,-434" max="1066,26,-436"/>
-        <cuboid min="1076,19,-434" max="1073,19,-436"/>
-        <cuboid min="1083,12,-434" max="1080,12,-436"/>
-    </spawn>
-    <spawn team="lime" kit="lime" yaw="-90">
-        <cuboid min="1017,26,-388" max="1015 26,-385"/>
-        <cuboid min="1017,19,-381" max="1015 26,-385"/>
-        <cuboid min="1017,12,-374" max="1015,12,-371"/>
-    </spawn>
-    <default yaw="134">
-        <block>1086,8,-387</block>
-    </default>
+	<spawn team="yellow" kit="yellow" yaw="0">
+		<cuboid min="1068,26,-434" max="1066,26,-435"/>
+		<cuboid min="1075,19,-434" max="1073,19,-435"/>
+		<cuboid min="1082,12,-434" max="1080,12,-435"/>
+	</spawn>
+	<spawn team="lime" kit="lime" yaw="-90">
+		<cuboid min="1016,26,-387" max="1015,26,-385"/>
+		<cuboid min="1016,19,-380" max="1015,26,-378"/>
+		<cuboid min="1016,12,-373" max="1015,12,-371"/>
+	</spawn>
+	<default yaw="135">
+		<block>1085.5,8,-368.5</block>
+	</default>
 </spawns>
-<killreward>
-    <item>golden apple</item>
-    <item amount="8">arrow</item>
-    <item amount="5">vine</item>
-</killreward>
-<killreward>
-    <filter>
-        <all>
-            <team>yellow</team>
-            <kill-streak repeat="true" count="3"/>
-        </all>
-    </filter>
-    <item>tnt</item>
-</killreward>
-<killreward>
-    <filter>
-        <team>yellow</team>
-    </filter>
-    <item amount="10" damage="4">stained glass</item>
-    <item amount="5" damage="4">wool</item>
-</killreward>
-<killreward>
-    <filter>
-        <all>
-            <team>lime</team>
-            <kill-streak repeat="true" count="3"/>
-        </all>
-    </filter>
-    <item>tnt</item>
-</killreward>
-<killreward>
-    <filter>
-        <team>lime</team>
-    </filter>
-    <item amount="10" damage="5">stained glass</item>
-    <item amount="5" damage="5">wool</item>
-</killreward>
+<killrewards>
+	<killreward>
+		<item>golden apple</item>
+		<item amount="8">arrow</item>
+		<item amount="5">vine</item>
+	</killreward>
+	<killreward>
+		<filter>
+			<all>
+				<team>yellow</team>
+				<kill-streak repeat="true" count="3"/>
+			</all>
+		</filter>
+		<item>tnt</item>
+	</killreward>
+	<killreward>
+		<filter>
+			<team>yellow</team>
+		</filter>
+		<item amount="10" damage="4">stained glass</item>
+		<item amount="5" damage="4">wool</item>
+	</killreward>
+	<killreward>
+		<filter>
+			<all>
+				<team>lime</team>
+				<kill-streak repeat="true" count="3"/>
+			</all>
+		</filter>
+		<item>tnt</item>
+	</killreward>
+	<killreward>
+		<filter>
+			<team>lime</team>
+		</filter>
+		<item amount="10" damage="5">stained glass</item>
+		<item amount="5" damage="5">wool</item>
+	</killreward>
+</killrewards>
 <toolrepair>
-    <tool>stone sword</tool>
-    <tool>bow</tool>
-    <tool>shears</tool>
+	<tool>stone sword</tool>
+	<tool>bow</tool>
+	<tool>shears</tool>
 </toolrepair>
 <itemremove>
-    <item>arrow</item>
-    <item>leather helmet</item>
-    <item>leather chestplate</item>
-    <item>leather leggings</item>
-    <item>leather boots</item>
-    <item>golden carrot</item>
+	<item>arrow</item>
+	<item>leather helmet</item>
+	<item>leather chestplate</item>
+	<item>leather leggings</item>
+	<item>leather boots</item>
+	<item>golden carrot</item>
 </itemremove>
 <tnt>
-    <instantignite>on</instantignite>
-    <fuse>3s</fuse>
-    <power>2</power>
+	<instantignite>on</instantignite>
+	<fuse>3s</fuse>
+	<power>2</power>
 </tnt>
 <disabledamage>
-    <damage ally="false" self="false" enemy="true" other="false">block explosion</damage>
+	<damage ally="false" self="false" enemy="true" other="false">block explosion</damage>
 </disabledamage>
 <regions>
-    <apply block-break="no-break">
-      <rectangle min="oo,oo" max="oo,oo"/>
-    </apply>
+	<apply block="no-break">
+		<rectangle id="playable" min="1085,-368" max="1035,-418"/>
+	</apply>
+	<apply block="deny-all">
+		<cuboid id="lime-spawn" min="1034,0,-370" max="1013,256,-390"/>
+		<cuboid id="yellow-spawn" min="1083,0,-420" max="1064,256,-438"/>
+		<cuboid id="obs-spawn" min="1080,0,-364" max="1089,10,-373"/>
+		<cuboid id="top-cube" min="1043,48,-410" max="1035,52,-418"/>
+		<negative>
+			<region id="playable"/>
+		</negative>
+	</apply>
+	<apply region="lime-spawn" enter="only-lime"/>
+	<apply region="yellow-spawn" enter="only-yellow"/>
 </regions>
 <filters>
-    <filter name="no-break">
-        <not>
-            <all>
-                <any>
-                    <block>quartz block</block>
-                    <block>stained clay</block>
-                </any>
-                <any>
-                    <filter name="allow-world"/>
-                    <filter name="allow-blocks"/>
-                </any>
-            </all>
-        </not>
+    <filter name="only-lime">
+        <team>lime</team>
     </filter>
+    <filter name="only-yellow">
+        <team>yellow</team>
+    </filter>
+	<filter id="no-break">
+		<not>
+			<all>
+				<any>
+					<block>quartz block</block>
+					<block>stained clay</block>
+				</any>
+			</all>
+		</not>
+	</filter>
 </filters>
 <score>
-    <limit>300</limit>
+	<limit>3200</limit>
 </score>
 <king>
-    <hills>
-      <!-- Hills are numbered from top to bottom, left to right -->
-        <hill name="Cube 1" capture-time="4s" neutral-state="false" points="3" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1036,50,-418" max="1043,50,-411"/>
-            </capture>
-            <progress>
-                <cuboid min="1036,50,-418" max="1043,50,-411"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 2" capture-time="4s" neutral-state="false" points="2" show="false"  show-progress="false">
-            <capture>
-                <cuboid min="1036,43,-411" max="1043,43,-404"/>
-            </capture>
-            <progress>
-                <cuboid min="1036,43,-411" max="1043,43,-404"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 3" capture-time="4s" neutral-state="false" points="2" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1043,43,-411" max="1050,43,-404"/>
-            </capture>
-            <progress>
-                <cuboid min="1043,43,-411" max="1050,43,-404"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <!--
-        <hill name="Cube 4" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1036,36,-404" max="1043,36,-397"/>
-            </capture>
-            <progress>
-                <cuboid min="1036,36,-404" max="1043,36,-397"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 5" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1043,36,-404" max="1050,36,-411"/>
-            </capture>
-            <progress>
-                <cuboid min="1043,36,-404" max="1050,36,-411"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 6" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1050,36,-411" max="1057,36,-418"/>
-            </capture>
-            <progress>
-                <cuboid min="1050,36,-411" max="1057,36,-418"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 7" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1036,29,-390" max="1043,29,-397"/>
-            </capture>
-            <progress>
-                <cuboid min="1036,29,-390" max="1043,29,-397"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 8" capture-time="4s" neutral-state="false" points="1" show="false"  show-progress="false">
-            <capture>
-                <cuboid min="1043,29,-397" max="1050,29,-404"/>
-            </capture>
-            <progress>
-                <cuboid min="1043,29,-397" max="1050,29,-404"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 9" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid  min="1050,29,-404" max="1057,29,-411"/>
-            </capture>
-            <progress>
-                <cuboid min="1050,29,-404" max="1057,29,-411"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 10" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1057,29,-411" max="1064,29,-404"/>
-            </capture>
-            <progress>
-                <cuboid min="1057,29,-411" max="1064,29,-404"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 11" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid  min="1036,22,-383" max="1043,22,-390"/>
-            </capture>
-            <progress>
-                <cuboid min="1036,22,-383" max="1043,22,-390"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 12" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1043,22,-390" max="1050,22,-397"/>
-            </capture>
-            <progress>
-                <cuboid min="1043,22,-390" max="1050,22,-397"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 13" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1050,22,-397" max="1057,22,-404"/>
-            </capture>
-            <progress>
-                <cuboid min="1050,22,-397" max="1057,22,-404"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 14" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1057,22,-404" max="1057,22,-404"/>
-            </capture>
-            <progress>
-                <cuboid min="1057,22,-404" max="1057,22,-404"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 15" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1064,22,-411" max="1071,22,-418"/>
-            </capture>
-            <progress>
-                <cuboid min="1064,22,-411" max="1071,22,-418"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 16" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1036,15,-376" max="1043,15,-383"/>
-            </capture>
-            <progress>
-                <cuboid min="1036,15,-376" max="1043,15,-383"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 17" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1043,15,-383" max="1050,15,-383"/>
-            </capture>
-            <progress>
-                <cuboid min="1043,15,-383" max="1050,15,-383"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 18" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1050,15,-390" max="1057,15,-404"/>
-            </capture>
-            <progress>
-                <cuboid min="1050,15,-390" max="1057,15,-404"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 19" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1057,15,-397" max="1064,15,-404"/>
-            </capture>
-            <progress>
-                <cuboid min="1057,15,-397" max="1064,15,-404"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 20" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1064,15,-404" max="1071,15,-411"/>
-            </capture>
-            <progress>
-                <cuboid min="1064,15,-404" max="1071,15,-411"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 21" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1071,15,-411" max="1078,15,-418"/>
-            </capture>
-            <progress>
-                <cuboid min="1071,15,-411" max="1078,15,-418"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 22" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1036,8,-369" max="1043,8,-376"/>
-            </capture>
-            <progress>
-                <cuboid min="1036,8,-369" max="1043,8,-376"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 23" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1043,8,-376" max="150,8,-383"/>
-            </capture>
-            <progress>
-                <cuboid min="1043,8,-376" max="150,8,-383"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 24" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1050,8,-383" max="1057,8,-390"/>
-            </capture>
-            <progress>
-                <cuboid min="1050,8,-383" max="1057,8,-390"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 25" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1057,8,-390" max="1057,8,-390"/>
-            </capture>
-            <progress>
-                <cuboid min="1057,8,-390" max="1057,8,-390"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 26" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1063,8,-397" max="1071,8,-404"/>
-            </capture>
-            <progress>
-                <cuboid min="1063,8,-397" max="-90,70,-167"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 27" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1071,8,-411" max="1078,8,-411"/>
-            </capture>
-            <progress>
-                <cuboid min="1071,8,-411" max="1078,8,-411"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-        <hill name="Cube 28" capture-time="4s" neutral-state="false" points="1" show="false" show-progress="false">
-            <capture>
-                <cuboid min="1078,8,-411" max="-1085,8,-418"/>
-            </capture>
-            <progress>
-                <cuboid min="1078,8,-411" max="-1085,8,-418"/>
-            </progress>
-            <captured>
-                <cuboid min="0,0,0" max="0,0,0"/>
-            </captured>
-        </hill>
-      -->
-    </hills>
+	<hills>
+	  <!-- Hills are numbered from top to bottom, left to right -->
+		<hill name="Top Cube" capture-time="10s" neutral-state="false" points="10" show="true" show-progress="true">
+			<capture>
+				<cuboid min="1042,49,-411" max="1036,50,-417"/>
+			</capture>
+			<progress>
+				<cuboid min="1042,49,-411" max="1036,50,-417"/>
+			</progress>
+			<captured>
+				<cuboid min="1042,49,-411" max="1036,50,-417"/>
+			</captured>
+		</hill>
+	</hills>
 </king>
 </map>

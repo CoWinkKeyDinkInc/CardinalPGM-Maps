@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <map proto="1.3.6">
 <name>Fairy Tales 2: Mini</name>
 <version>2.0.0</version>
@@ -25,7 +24,7 @@
         </spawn>
     </spawns>
     <default yaw="90">
-        <cylinder base="28,28,-18" radius="2" height="0"/>
+        <cylinder base="0.5,10,0" radius="1" height="1"/>
     </default>
 </spawns>
 <kits>
