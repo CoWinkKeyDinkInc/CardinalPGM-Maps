@@ -19,7 +19,7 @@
         <item slot="28" amount="16">arrow</item>
         <leggings>iron leggings</leggings>
         <item slot="4" damage="-3000">shears</item>
-        <item slot="5" amount="10">vine</item>
+        <item slot="5" amount="16">vine</item>
         <potion duration="oo" amplifier="1" ambient="true">fast digging</potion>
     </kit>
     <kit name="yellow" parents="spawn">
