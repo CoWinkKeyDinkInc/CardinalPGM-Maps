@@ -33,8 +33,8 @@
     </kit>
     <kit id="giveWither" force="true">
         <potion duration="oo" amplifier="1">wither</potion>
-      </kit>
-      <kit id="giveBlindness" force="true">
+    </kit>
+    <kit id="giveBlindness" force="true">
         <potion duration="oo" amplifier="1">blindness</potion>
     </kit>
     <kit id="takeEffects" force="true">
