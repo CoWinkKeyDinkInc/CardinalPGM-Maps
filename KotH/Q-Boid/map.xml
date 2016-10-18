@@ -1,133 +1,132 @@
-<?xml version="1.0"?>
 <map proto="1.3.3">
 <name>Q*Boid</name>
 <version>1.0.0</version>
 <objective>Capture and kill players until getting 3200 points to win the game.</objective>
 <authors>
-	<author uuid="5c79d2c9-a4f0-4343-a84b-e1720f13009b"/>
-	<!-- CoWinkKeyDinkInc -->
+    <author uuid="5c79d2c9-a4f0-4343-a84b-e1720f13009b"/>
+    <!-- CoWinkKeyDinkInc -->
 </authors>
 <teams>
-	<team id="yellow" color="yellow" max="16">Yellow Team</team>
-	<team id="lime" color="green" max="16">Lime Team</team>
+    <team id="yellow" color="yellow" max="16">Yellow Team</team>
+    <team id="lime" color="green" max="16">Lime Team</team>
 </teams>
 <kits>
-	<kit name="spawn" force="true">
-		<item slot="0" damage="-3000">stone sword</item>
-		<item slot="1" damage="-3000">bow</item>
-		<item slot="6" amount="32">golden carrot</item>
-		<item slot="7" amount="2">golden apple</item>
-		<item slot="28" amount="16">arrow</item>
-		<leggings>iron leggings</leggings>
-		<item slot="4" damage="-3000">shears</item>
-		<item slot="5" amount="10">vine</item>
-		<potion duration="oo" amplifier="1" ambient="true">fast digging</potion>
-	</kit>
-	<kit name="yellow" parents="spawn">
-		<helmet color="FFFF00">leather helmet</helmet>
-		<chestplate color="FFFF00">leather chestplate</chestplate>
-		<boots enchantment="protection fall:1" color="FFFF00">leather boots</boots>
-		<item slot="2" damage="4" amount="15">stained glass</item>
-		<item slot="3" damage="4" amount="8">wool</item>
-	</kit>
-	<kit name="lime" parents="spawn">
-		<helmet color="32CD32">leather helmet</helmet>
-		<chestplate color="32CD32">leather chestplate</chestplate>
-		<boots enchantment="protection fall:1" color="32CD32">leather boots</boots>
-		<item slot="2" damage="5" amount="15">stained glass</item>
-		<item slot="3" damage="5" amount="8">wool</item>
-	</kit>
+    <kit name="spawn" force="true">
+        <item slot="0" damage="-3000">stone sword</item>
+        <item slot="1" damage="-3000">bow</item>
+        <item slot="6" amount="32">golden carrot</item>
+        <item slot="7" amount="2">golden apple</item>
+        <item slot="28" amount="16">arrow</item>
+        <leggings>iron leggings</leggings>
+        <item slot="4" damage="-3000">shears</item>
+        <item slot="5" amount="10">vine</item>
+        <potion duration="oo" amplifier="1" ambient="true">fast digging</potion>
+    </kit>
+    <kit name="yellow" parents="spawn">
+        <helmet color="FFFF00">leather helmet</helmet>
+        <chestplate color="FFFF00">leather chestplate</chestplate>
+        <boots enchantment="protection fall:1" color="FFFF00">leather boots</boots>
+        <item slot="2" damage="4" amount="15">stained glass</item>
+        <item slot="3" damage="4" amount="8">wool</item>
+    </kit>
+    <kit name="lime" parents="spawn">
+        <helmet color="32CD32">leather helmet</helmet>
+        <chestplate color="32CD32">leather chestplate</chestplate>
+        <boots enchantment="protection fall:1" color="32CD32">leather boots</boots>
+        <item slot="2" damage="5" amount="15">stained glass</item>
+        <item slot="3" damage="5" amount="8">wool</item>
+    </kit>
 </kits>
 <spawns>
-	<spawn team="yellow" kit="yellow" yaw="0">
-		<cuboid min="1068,26,-434" max="1066,26,-435"/>
-		<cuboid min="1075,19,-434" max="1073,19,-435"/>
-		<cuboid min="1082,12,-434" max="1080,12,-435"/>
-	</spawn>
-	<spawn team="lime" kit="lime" yaw="-90">
-		<cuboid min="1016,26,-387" max="1015,26,-385"/>
-		<cuboid min="1016,19,-380" max="1015,26,-378"/>
-		<cuboid min="1016,12,-373" max="1015,12,-371"/>
-	</spawn>
-	<default yaw="135">
-		<block>1085.5,8,-368.5</block>
-	</default>
+    <spawn team="yellow" kit="yellow" yaw="0">
+        <cuboid min="1068,26,-434" max="1066,26,-435"/>
+        <cuboid min="1075,19,-434" max="1073,19,-435"/>
+        <cuboid min="1082,12,-434" max="1080,12,-435"/>
+    </spawn>
+    <spawn team="lime" kit="lime" yaw="-90">
+        <cuboid min="1016,26,-387" max="1015,26,-385"/>
+        <cuboid min="1016,19,-380" max="1015,26,-378"/>
+        <cuboid min="1016,12,-373" max="1015,12,-371"/>
+    </spawn>
+    <default yaw="135">
+        <block>1085.5,8,-368.5</block>
+    </default>
 </spawns>
 <killrewards>
-	<killreward>
-		<item>golden apple</item>
-		<item amount="8">arrow</item>
-		<item amount="5">vine</item>
-	</killreward>
-	<killreward>
-		<filter>
-			<all>
-				<team>yellow</team>
-				<kill-streak repeat="true" count="3"/>
-			</all>
-		</filter>
-		<item>tnt</item>
-	</killreward>
-	<killreward>
-		<filter>
-			<team>yellow</team>
-		</filter>
-		<item amount="10" damage="4">stained glass</item>
-		<item amount="5" damage="4">wool</item>
-	</killreward>
-	<killreward>
-		<filter>
-			<all>
-				<team>lime</team>
-				<kill-streak repeat="true" count="3"/>
-			</all>
-		</filter>
-		<item>tnt</item>
-	</killreward>
-	<killreward>
-		<filter>
-			<team>lime</team>
-		</filter>
-		<item amount="10" damage="5">stained glass</item>
-		<item amount="5" damage="5">wool</item>
-	</killreward>
+    <killreward>
+        <item>golden apple</item>
+        <item amount="8">arrow</item>
+        <item amount="5">vine</item>
+    </killreward>
+    <killreward>
+        <filter>
+            <all>
+                <team>yellow</team>
+                <kill-streak repeat="true" count="3"/>
+            </all>
+        </filter>
+        <item>tnt</item>
+    </killreward>
+    <killreward>
+        <filter>
+            <team>yellow</team>
+        </filter>
+        <item amount="10" damage="4">stained glass</item>
+        <item amount="5" damage="4">wool</item>
+    </killreward>
+    <killreward>
+        <filter>
+            <all>
+                <team>lime</team>
+                <kill-streak repeat="true" count="3"/>
+            </all>
+        </filter>
+        <item>tnt</item>
+    </killreward>
+    <killreward>
+        <filter>
+            <team>lime</team>
+        </filter>
+        <item amount="10" damage="5">stained glass</item>
+        <item amount="5" damage="5">wool</item>
+    </killreward>
 </killrewards>
 <toolrepair>
-	<tool>stone sword</tool>
-	<tool>bow</tool>
-	<tool>shears</tool>
+    <tool>stone sword</tool>
+    <tool>bow</tool>
+    <tool>shears</tool>
 </toolrepair>
 <itemremove>
-	<item>arrow</item>
-	<item>leather helmet</item>
-	<item>leather chestplate</item>
-	<item>leather leggings</item>
-	<item>leather boots</item>
-	<item>golden carrot</item>
+    <item>arrow</item>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
+    <item>leather leggings</item>
+    <item>leather boots</item>
+    <item>golden carrot</item>
 </itemremove>
 <tnt>
-	<instantignite>on</instantignite>
-	<fuse>3s</fuse>
-	<power>2</power>
+    <instantignite>on</instantignite>
+    <fuse>3s</fuse>
+    <power>2</power>
 </tnt>
 <disabledamage>
-	<damage ally="false" self="false" enemy="true" other="false">block explosion</damage>
+    <damage ally="false" self="false" enemy="true" other="false">block explosion</damage>
 </disabledamage>
 <regions>
-	<apply block="no-break">
-		<rectangle id="playable" min="1085,-368" max="1035,-418"/>
-	</apply>
-	<apply block="deny-all">
-		<cuboid id="lime-spawn" min="1034,0,-370" max="1013,256,-390"/>
-		<cuboid id="yellow-spawn" min="1083,0,-420" max="1064,256,-438"/>
-		<cuboid id="obs-spawn" min="1080,0,-364" max="1089,10,-373"/>
-		<cuboid id="top-cube" min="1043,48,-410" max="1035,52,-418"/>
-		<negative>
-			<region id="playable"/>
-		</negative>
-	</apply>
-	<apply region="lime-spawn" enter="only-lime"/>
-	<apply region="yellow-spawn" enter="only-yellow"/>
+    <apply block="no-break">
+        <rectangle id="playable" min="1085,-368" max="1035,-418"/>
+    </apply>
+    <apply block="deny-all">
+        <cuboid id="lime-spawn" min="1034,0,-370" max="1013,256,-390"/>
+        <cuboid id="yellow-spawn" min="1083,0,-420" max="1064,256,-438"/>
+        <cuboid id="obs-spawn" min="1080,0,-364" max="1089,10,-373"/>
+        <cuboid id="top-cube" min="1043,48,-410" max="1035,52,-418"/>
+        <negative>
+            <region id="playable"/>
+        </negative>
+    </apply>
+    <apply region="lime-spawn" enter="only-lime"/>
+    <apply region="yellow-spawn" enter="only-yellow"/>
 </regions>
 <filters>
     <filter name="only-lime">
@@ -136,34 +135,34 @@
     <filter name="only-yellow">
         <team>yellow</team>
     </filter>
-	<filter id="no-break">
-		<not>
-			<all>
-				<any>
-					<block>quartz block</block>
-					<block>stained clay</block>
-				</any>
-			</all>
-		</not>
-	</filter>
+    <filter id="no-break">
+        <not>
+            <all>
+                <any>
+                    <block>quartz block</block>
+                    <block>stained clay</block>
+                </any>
+            </all>
+        </not>
+    </filter>
 </filters>
 <score>
-	<limit>3200</limit>
+    <limit>3200</limit>
 </score>
 <king>
-	<hills>
-	  <!-- Hills are numbered from top to bottom, left to right -->
-		<hill name="Top Cube" capture-time="10s" neutral-state="false" points="10" show="true" show-progress="true">
-			<capture>
-				<cuboid min="1042,49,-411" max="1036,50,-417"/>
-			</capture>
-			<progress>
-				<cuboid min="1042,49,-411" max="1036,50,-417"/>
-			</progress>
-			<captured>
-				<cuboid min="1042,49,-411" max="1036,50,-417"/>
-			</captured>
-		</hill>
-	</hills>
+    <hills>
+      <!-- Hills are numbered from top to bottom, left to right -->
+        <hill name="Top Cube" capture-time="10s" neutral-state="false" points="10" show="true" show-progress="true">
+            <capture>
+                <cuboid min="1042,49,-411" max="1036,50,-417"/>
+            </capture>
+            <progress>
+                <cuboid min="1042,49,-411" max="1036,50,-417"/>
+            </progress>
+            <captured>
+                <cuboid min="1042,49,-411" max="1036,50,-417"/>
+            </captured>
+        </hill>
+    </hills>
 </king>
 </map>

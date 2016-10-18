@@ -6,7 +6,7 @@
     <author uuid="65722be1-29fd-4e7d-a47d-94ed616ed880"/> <!-- KroestV2 -->
 </authors>
 <contributors>
-	<contributor uuid="2e28d256-4656-4f37-bcdc-5fab21b0f70f" contribution="Creator of 'fairy Tales 2: A Tale or Two' "/> <!-- D347HxD -->
+    <contributor uuid="2e28d256-4656-4f37-bcdc-5fab21b0f70f" contribution="Creator of 'fairy Tales 2: A Tale or Two' "/> <!-- D347HxD -->
 </contributors>
 <teams>
     <team color="red" max="28" max-overfill="32">Red</team>
@@ -80,28 +80,28 @@
             <filter name="allow-some"/>
         </all>
     </filter>
-	<filter name="only-red-usage">
-		<not>
-			<all>
-				<any>
-					<block>chest</block>
-					<block>workbench</block>
-				</any>
-				<team>blue</team>
-			</all>
-		</not>
-	</filter>
-	<filter name="only-green-usage">
-		<not>
-			<all>
-				<any>
-					<block>chest</block>
-					<block>workbench</block>
-				</any>
-				<team>red</team>
-			</all>
-		</not>
-	</filter>
+    <filter name="only-red-usage">
+        <not>
+            <all>
+                <any>
+                    <block>chest</block>
+                    <block>workbench</block>
+                </any>
+                <team>blue</team>
+            </all>
+        </not>
+    </filter>
+    <filter name="only-green-usage">
+        <not>
+            <all>
+                <any>
+                    <block>chest</block>
+                    <block>workbench</block>
+                </any>
+                <team>red</team>
+            </all>
+        </not>
+    </filter>
 </filters>
 <regions>
     <union name="red-wool-rooms">
@@ -115,8 +115,8 @@
         <region name="red-wool-rooms"/>
     </apply>
     <union name="green-wool-rooms">
-		<rectangle name="yellow-room" min="-39,48" max="-50,59"/>
-		<rectangle name="red-room" min="40,48" max="51,59"/>
+        <rectangle name="yellow-room" min="-39,48" max="-50,59"/>
+        <rectangle name="red-room" min="40,48" max="51,59"/>
     </union>
     <apply block-break="only-green-sp" block-place="deny-all" use="only-green-usage">
         <region name="green-wool-rooms"/>
@@ -128,9 +128,9 @@
         <complement>
             <negative>
                 <rectangle min="-31,-58" max="32,59"/>
-				<rectangle min="51,-58" max="-50,-47"/>
-				<rectangle min="51,59" max="-50,48"/>
-			</negative>
+                <rectangle min="51,-58" max="-50,-47"/>
+                <rectangle min="51,59" max="-50,48"/>
+            </negative>
             <region name="green-wool-rooms"/>
             <region name="red-wool-rooms"/>
         </complement>
@@ -167,12 +167,12 @@
     <apply enter="only-green" message="You cannot enter the other team's spawn!">
         <region name="green-spawn"/>
     </apply>
-	<apply block="red-wool" use="only-red-usage">
-		<region name="green-wool-rooms"/>
-	</apply>
-	<apply block="blue-wool" use="only-blue-usage">
-		<region name="red-wool-rooms"/>
-	</apply>
+    <apply block="red-wool" use="only-red-usage">
+        <region name="green-wool-rooms"/>
+    </apply>
+    <apply block="blue-wool" use="only-blue-usage">
+        <region name="red-wool-rooms"/>
+    </apply>
 </regions>
 <toolrepair>
     <tool>stone sword</tool>

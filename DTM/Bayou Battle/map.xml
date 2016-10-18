@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <map proto="1.3.0">
 <name>Bayou Battle</name>
 <version>1.0</version>
@@ -7,36 +6,36 @@
   <author uuid="e8d1ad63-bd9e-4d0e-9a6c-27f2b047d924"/> <!-- Mikeg542 -->
 </authors>
 <contributors>
-	<contributor uuid="5c79d2c9-a4f0-4343-a84b-e1720f13009b" contribution="XML"/> <!-- CoWinkKeyDinkInc -->
+    <contributor uuid="5c79d2c9-a4f0-4343-a84b-e1720f13009b" contribution="XML"/> <!-- CoWinkKeyDinkInc -->
 </contributors>
 <teams>
-	<team color="dark purple" max="8">Purple</team>
-	<team color="gold" max="8">Orange</team>
+    <team color="dark purple" max="8">Purple</team>
+    <team color="gold" max="8">Orange</team>
 </teams>
 <kits>
-	<kit name="spawn">
-		<item slot="0">stone sword</item>
-		<item slot="1">bow</item>
-		<item slot="28" amount="64">arrow</item>
-		<item slot="2">diamond pickaxe</item>
-		<item slot="3">iron axe</item>
-		<item slot="4" amount="2">golden apple</item>
-		<item slot="5" amount="64">cooked fish</item>
-		<item slot="6" amount="32" damage="2">wood</item>
-		<item slot="7" amount="32">glass</item>
-	</kit>
+    <kit name="spawn">
+        <item slot="0">stone sword</item>
+        <item slot="1">bow</item>
+        <item slot="28" amount="64">arrow</item>
+        <item slot="2">diamond pickaxe</item>
+        <item slot="3">iron axe</item>
+        <item slot="4" amount="2">golden apple</item>
+        <item slot="5" amount="64">cooked fish</item>
+        <item slot="6" amount="32" damage="2">wood</item>
+        <item slot="7" amount="32">glass</item>
+    </kit>
 </kits>
 <toolrepair>
-	<tool>iron sword</tool>
-	<tool>bow</tool>
-	<tool>iron pickaxe</tool>
-	<tool>iron axe</tool>
+    <tool>iron sword</tool>
+    <tool>bow</tool>
+    <tool>iron pickaxe</tool>
+    <tool>iron axe</tool>
 </toolrepair>
 <itemremove>
-	<item>log</item>
-	<item>wood</item>
-	<item>glass</item>
-	<item>cooked fish</item>
-	<item>arrow</item>
+    <item>log</item>
+    <item>wood</item>
+    <item>glass</item>
+    <item>cooked fish</item>
+    <item>arrow</item>
 </itemremove>
 </map>

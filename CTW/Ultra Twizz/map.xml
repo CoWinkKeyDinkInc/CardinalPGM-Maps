@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <map proto="1.3.0">
 <name>Ultra Twizz</name>
 <version>1.3.0</version>
@@ -46,9 +45,9 @@
     <tool>iron axe</tool>
 </toolrepair>
 <itemremove>
-	<item>chainmail chestplate</item>
-	<item>leather boots</item>
-	<item>leather leggings</item>
+    <item>chainmail chestplate</item>
+    <item>leather boots</item>
+    <item>leather leggings</item>
     <item>wood</item>
     <item>string</item>
     <item>chainmail chestplate</item>
@@ -113,19 +112,19 @@
         <rectangle min="-48,22" max="49,-21"/>
     </union>
     <union name="bases">
-		<cylinder name="pink-base" base="96.5,0,0.5" radius="5" height="100"/>
-		<cylinder name="yellow-base" base="-97.5,0,0.5" radius="5" height="100"/>
+        <cylinder name="pink-base" base="96.5,0,0.5" radius="5" height="100"/>
+        <cylinder name="yellow-base" base="-97.5,0,0.5" radius="5" height="100"/>
     </union>
     <union name="pink-wools">
-	<!-- pink must enter -->
-		<rectangle name="yellow-wool" min="-119,0" max="-142,12"/>
-		<rectangle name="orange-wool" min="-119,0" max="-142,-11"/>
-	</union>
-	<!-- yellow must enter -->
+    <!-- pink must enter -->
+        <rectangle name="yellow-wool" min="-119,0" max="-142,12"/>
+        <rectangle name="orange-wool" min="-119,0" max="-142,-11"/>
+    </union>
+    <!-- yellow must enter -->
     <union name="yellow-wools">
-		<rectangle name="pink-wool" min="120,0" max="143,12"/>
-		<rectangle name="purple-wool" min="120,0" max="143,-11"/>
-	</union>
+        <rectangle name="pink-wool" min="120,0" max="143,12"/>
+        <rectangle name="purple-wool" min="120,0" max="143,-11"/>
+    </union>
     <!-- Applied -->
     <apply enter="pink" message="You cannot enter the enemy base!">
         <region name="pink-base"/>
@@ -133,10 +132,10 @@
     <apply enter="yellow" message="You cannot enter the enemy base!">
         <region name="yellow-base"/>
     </apply>
-	<apply block="deny-all">
-		<region name="yellow-base"/>
+    <apply block="deny-all">
+        <region name="yellow-base"/>
         <region name="pink-base"/>
-	</apply>
+    </apply>
     <apply enter="anti-grief-pink" message="You cannot enter your own wool room!">
         <region name="pink-wools"/>
     </apply>
@@ -178,7 +177,7 @@
     <item>yellow flower</item>
 </itemremove>
 <killreward>
-	<item amount="8" damage="2">wood</item>
-	<item amount="1">golden apple</item>
+    <item amount="8" damage="2">wood</item>
+    <item amount="1">golden apple</item>
 </killreward>
 </map>
