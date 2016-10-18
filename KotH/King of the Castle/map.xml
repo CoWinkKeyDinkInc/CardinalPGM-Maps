@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <map proto="1.3.6">
 <name>King of the Castle</name>
 <version>1.0.0</version>
@@ -95,9 +94,9 @@
 </killreward>
 <regions>
     <apply block="deny-all">
-		    <negative>
-		        <rectangle min="-220,-220" max="220,220"/>
-		    </negative>
+            <negative>
+                <rectangle min="-220,-220" max="220,220"/>
+            </negative>
     </apply>
 </regions>
 <spawns>
@@ -134,7 +133,7 @@
                 <cuboid min="-7,90,-5" max="7,100,5"/>
             </progress>
             <captured>
-				        <cuboid min="0,90,0" max="0,100,0"/>
+                <cuboid min="0,90,0" max="0,100,0"/>
             </captured>
         </hill>
     </hills>

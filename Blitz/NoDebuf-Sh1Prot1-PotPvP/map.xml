@@ -16,40 +16,40 @@
     </kit>
     <kit name="team" parents="all">
         <item slot="0" enchantment="durability:3;damage all:1">diamond sword</item>
-	      <item slot="1" amount="1" damage="16421">potion</item>
-	      <item slot="2" amount="1" damage="16421">potion</item>
-	      <item slot="3" amount="1" damage="16421">potion</item>
-	      <item slot="4" amount="1" damage="16421">potion</item>
-	      <item slot="5" amount="1" damage="16421">potion</item>
-	      <item slot="6" amount="1" damage="16421">potion</item>
-	      <item slot="9" amount="1" damage="16421">potion</item>
-    	  <item slot="10" amount="1" damage="16421">potion</item>
-    	  <item slot="11" amount="1" damage="16421">potion</item>
-    	  <item slot="12" amount="1" damage="16421">potion</item>
-    	  <item slot="13" amount="1" damage="16421">potion</item>
-    	  <item slot="14" amount="1" damage="16421">potion</item>
-    	  <item slot="15" amount="1" damage="16421">potion</item>
-    	  <item slot="18" amount="1" damage="16421">potion</item>
-    	  <item slot="19" amount="1" damage="16421">potion</item>
-    	  <item slot="20" amount="1" damage="16421">potion</item>
-    	  <item slot="21" amount="1" damage="16421">potion</item>
-    	  <item slot="22" amount="1" damage="16421">potion</item>
-    	  <item slot="23" amount="1" damage="16421">potion</item>
-    	  <item slot="24" amount="1" damage="16421">potion</item>
-    	  <item slot="27" amount="1" damage="16421">potion</item>
-    	  <item slot="28" amount="1" damage="16421">potion</item>
-    	  <item slot="29" amount="1" damage="16421">potion</item>
-    	  <item slot="30" amount="1" damage="16421">potion</item>
-    	  <item slot="31" amount="1" damage="16421">potion</item>
-    	  <item slot="32" amount="1" damage="16421">potion</item>
-    	  <item slot="33" amount="1" damage="16421">potion</item>
-    	  <item slot="34" amount="1" damage="8226">potion</item>
-    	  <item slot="35" amount="1" damage="8226">potion</item>
-    	  <item slot="7" amount="1" damage="8226">potion</item>
-    	  <item slot="16" amount="1" damage="8226">potion</item>
-    	  <item slot="25" amount="1" damage="8226">potion</item>
-    	  <item slot="17" amount="1" damage="8226">potion</item>
-    	  <item slot="26" amount="1" damage="8226">potion</item>
+        <item slot="1" amount="1" damage="16421">potion</item>
+        <item slot="2" amount="1" damage="16421">potion</item>
+        <item slot="3" amount="1" damage="16421">potion</item>
+        <item slot="4" amount="1" damage="16421">potion</item>
+        <item slot="5" amount="1" damage="16421">potion</item>
+        <item slot="6" amount="1" damage="16421">potion</item>
+        <item slot="9" amount="1" damage="16421">potion</item>
+        <item slot="10" amount="1" damage="16421">potion</item>
+        <item slot="11" amount="1" damage="16421">potion</item>
+        <item slot="12" amount="1" damage="16421">potion</item>
+        <item slot="13" amount="1" damage="16421">potion</item>
+        <item slot="14" amount="1" damage="16421">potion</item>
+        <item slot="15" amount="1" damage="16421">potion</item>
+        <item slot="18" amount="1" damage="16421">potion</item>
+        <item slot="19" amount="1" damage="16421">potion</item>
+        <item slot="20" amount="1" damage="16421">potion</item>
+        <item slot="21" amount="1" damage="16421">potion</item>
+        <item slot="22" amount="1" damage="16421">potion</item>
+        <item slot="23" amount="1" damage="16421">potion</item>
+        <item slot="24" amount="1" damage="16421">potion</item>
+        <item slot="27" amount="1" damage="16421">potion</item>
+        <item slot="28" amount="1" damage="16421">potion</item>
+        <item slot="29" amount="1" damage="16421">potion</item>
+        <item slot="30" amount="1" damage="16421">potion</item>
+        <item slot="31" amount="1" damage="16421">potion</item>
+        <item slot="32" amount="1" damage="16421">potion</item>
+        <item slot="33" amount="1" damage="16421">potion</item>
+        <item slot="34" amount="1" damage="8226">potion</item>
+        <item slot="35" amount="1" damage="8226">potion</item>
+        <item slot="7" amount="1" damage="8226">potion</item>
+        <item slot="16" amount="1" damage="8226">potion</item>
+        <item slot="25" amount="1" damage="8226">potion</item>
+        <item slot="17" amount="1" damage="8226">potion</item>
+        <item slot="26" amount="1" damage="8226">potion</item>
         <item slot="8" amount="32">bread</item>
     </kit>
     <kit name="red-gear" parents="team">
@@ -67,7 +67,7 @@
 </kits>
 <spawns pitch="0">
     <default yaw="-135" kit="all">
-        <cylinder base="0,36,0" radius="1" height="1"/>
+        <cylinder base="0.5,36,0.5" radius="1" height="1"/>
     </default>
     <spawn team="red" yaw="135" kit="red-gear">
         <point>22.5,4,22.5</point>
@@ -85,10 +85,10 @@
 </regions>
 <destroyables name="Spawn-Tubes" materials="stained glass:11; stained glass:14" show="false" mode-changes="true">
     <destroyable owner="blue">
-       <region><cuboid min="-24,1,-15" max="-14,9,-24"/></region>
+        <region><cuboid min="-24,1,-15" max="-14,9,-24"/></region>
     </destroyable>
     <destroyable owner="red">
-       <region><cuboid min="25,1,18" max="18,9,25"/></region>
+        <region><cuboid min="25,1,18" max="18,9,25"/></region>
     </destroyable>
 </destroyables>
 <modes>

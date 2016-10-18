@@ -7,12 +7,11 @@
     <author uuid="f690a591-348b-482e-a18d-7779d0c0a28c" />
     <!--   mitchiii_   -->
 </authors>
-
 <blitz />
 <time>6m</time>
 <teams>
-    <team id="blueTeam" color="blue"     max="12">Blue</team>
-    <team id="redTeam"  color="dark red" max="12">Red</team>
+    <team id="blue" color="blue" max="12">Blue</team>
+    <team id="red" color="dark red" max="12">Red</team>
 </teams>
 <kits>
     <kit id="main">
@@ -25,57 +24,60 @@
         <chestplate enchantment="protection environmental" unbreakable="true">iron chestplate</chestplate>
     </kit>
     <kit id="blueKit" parents="main">
-        <leggings color="0066cc" unbreakable="true">leather leggings</leggings>
-        <boots color="0066cc" enchantment="protection fall" unbreakable="true">leather boots</boots>
+        <leggings color="0000FF" unbreakable="true">leather leggings</leggings>
+        <boots color="0000FF" enchantment="protection fall" unbreakable="true">leather boots</boots>
     </kit>
     <kit id="redKit" parents="main">
-        <leggings color="cd0000" unbreakable="true">leather leggings</leggings>
-        <boots color="cd0000" enchantment="protection fall" unbreakable="true">leather boots</boots>
+        <leggings color="8B0000" unbreakable="true">leather leggings</leggings>
+        <boots color="8B0000" enchantment="protection fall" unbreakable="true">leather boots</boots>
     </kit>
     <kit id="giveWither" force="true">
         <potion duration="oo" amplifier="1">wither</potion>
-	  </kit>
-	  <kit id="giveBlindness" force="true">
+    </kit>
+    <kit id="giveBlindness" force="true">
         <potion duration="oo" amplifier="1">blindness</potion>
     </kit>
     <kit id="takeEffects" force="true">
         <potion duration="0" amplifier="0">wither</potion>
-		    <potion duration="0" amplifier="0">blindness</potion>
+        <potion duration="0" amplifier="0">blindness</potion>
     </kit>
 </kits>
 <spawns>
-    <spawn team="blueTeam" kit="blueKit" region="blueSpawn" yaw="180" />
-    <spawn team="redTeam"  kit="redKit"  region="redSpawn" yaw="0" />
-    <default region="defaultSpawn" yaw="-35" />
+    <default yaw="-67">
+        <point>61.5,49,0.5</point>
+    </default>
+    <spawn team="blue" kit="blueKit" yaw="180">
+        <point>112.5,29,62.5</point>
+    </spawn>
+    <spawn team="red" kit="redKit" yaw="0">
+        <point>112.5,29,-62.5</point>
+    </spawn>
 </spawns>
 <filters>
-    <team id="onlyBlue">blueTeam</team>
-    <team id="onlyRed">redTeam</team>
+    <team id="onlyBlue">blue</team>
+    <team id="onlyRed">red</team>
     <random id="random50">0.5</random>
 </filters>
 <regions>
-    <point id="blueSpawn">112.5,29,62.5</point>
-    <point id="redSpawn">112.5,29,-62.5</point>
-    <point id="defaultSpawn">60.5,49,0.5</point>
     <above id="above36" y="35"/>
     <union id="water">
-        <cuboid id="blue-poison" min="120,27,62"  max="107,29,55" />
-        <cuboid id="blue-junction" min="117,27,43"  max="123,29,35" />
-        <cuboid id="blue-left" min="91,27,27"   max="106,29,42" />
-        <cuboid id="blue-right" min="123,27,31"  max="138,29,38" />
-        <cuboid id="blue-center" min="98,25,21"   max="128,27,12" />
-        <cuboid id="lower-pools" min="83,15,-10"  max="142,17,10" />
-        <cuboid id="red-poison" min="105,27,-56" max="118,29,-62" />
-        <cuboid id="red-junction" min="108,27,-43" max="102,29,-35" />
-        <cuboid id="red-left" min="119,27,-42" max="134,29,-27" />
-        <cuboid id="red-right" min="102,27,-31" max="87,29,-38" />
-        <cuboid id="red-center" min="127,25,-21" max="97,27,-12" />
+        <cuboid id="blue-poison" min="120,27,62"  max="107,29,55"/>
+        <cuboid id="blue-junction" min="117,27,43"  max="123,29,35"/>
+        <cuboid id="blue-left" min="91,27,27"   max="106,29,42"/>
+        <cuboid id="blue-right" min="123,27,31"  max="138,29,38"/>
+        <cuboid id="blue-center" min="98,25,21"   max="128,27,12"/>
+        <cuboid id="lower-pools" min="83,15,-10"  max="142,17,10"/>
+        <cuboid id="red-poison" min="105,27,-56" max="118,29,-62"/>
+        <cuboid id="red-junction" min="108,27,-43" max="102,29,-35"/>
+        <cuboid id="red-left" min="119,27,-42" max="134,29,-27"/>
+        <cuboid id="red-right" min="102,27,-31" max="87,29,-38"/>
+        <cuboid id="red-center" min="127,25,-21" max="97,27,-12"/>
     </union>
     <rectangle id="blueBase" min="120,66"  max="106,50"/>
     <rectangle id="redBase"  min="104,-67" max="118,-51"/>
     <!--  Applied  -->
     <apply enter="never" message="Don't climb above the map!">
-      <region id="above36"/>
+        <region id="above36"/>
     </apply>
     <apply block="never"/>
     <apply region="water" filter="random50" kit="giveWither"/>
