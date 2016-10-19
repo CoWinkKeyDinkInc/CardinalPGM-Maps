@@ -33,7 +33,7 @@
     </spawn>
     <default>
         <region yaw="0">
-            <cuboid min="-312,50,-483" max="-305,50,-476"/>
+            <point>-308.5,50,-477.5</point>
         </region>
     </default>
 </spawns>
@@ -69,10 +69,14 @@
 <!--Filters-->
 <filters>
     <filter id="only-blue">
-        <team>blue-team</team>
+        <all>
+            <team>blue-team</team>
+        </all>
     </filter>
     <filter id="only-yellow">
-        <team>yellow-team</team>
+        <all>
+            <team>yellow-team</team>
+        </all>
     </filter>
     <not id="no-void">
         <void/>
@@ -138,55 +142,63 @@
     </union>
     <union id="woolrooms">
         <union id="ywoolrooms"><!--Wools yellow need to get-->
-            <cuboid id="silverwool" min="-171,0,-435" max="-165,11,-429"/>
-            <cuboid id="graywool" min="-171,0,-388" max="-165,11,-382"/>
+            <cuboid id="silverwool" min="-171,0,-428" max="-164,9,-435"/>
+            <cuboid id="graywool" min="-171,0,-388" max="-164,9,-381"/>
         </union>
         <union id="bwoolrooms"><!--Wools blue need to get-->
-            <cuboid id="magentawool" min="-452,0,-389" max="-446,11,-38"/>
-            <cuboid id="brownwool" min="-452,0,-436" max="-446,11,-430"/>
+            <cuboid id="magentawool" min="-452,0,-389" max="-445,10,-382"/>
+            <cuboid id="brownwool" min="-452,0,-429" max="-445,10,-436"/>
         </union>
     </union>
     <union id="iron">
         <rectangle min="-476,-371" max="-489,-388"/>
         <rectangle min="-141,-447" max="-128,-430"/>
     </union>
-    <negative id="yes-void">
+    <negative id="void">
         <rectangle id="play-area" min="-492,-446" max="-125,-372"/>
     </negative>
-    <union id="bluemonus">
-        <cuboid id="silver" min="-171,12,-435" max="-165,10,-429"/>
-        <cuboid id="gray" min="-171,12,-388" max="-165,10,-382"/>
+    <union id="blue-ent">
+        <cuboid id="silver" min="-171,10,-428" max="-164,12,-435"/>
+        <cuboid id="gray" min="-171,10,-388" max="-164,12,-381"/>
     </union>
-    <union id="yellowmonus">
-        <cuboid id="magenta" min="-452,12,-389" max="-446,10,-383"/>
-        <cuboid id="brown" min="-452,12,-436" max="-446,10,-430"/>
+    <union id="yellow-ent">
+        <cuboid id="magenta" min="-452,10,-389" max="-445,12,-382"/>
+        <cuboid id="brown" min="-452,10,-429" max="-445,12,-436"/>
+    </union>
+    <union id="blue-port">
+        <cuboid id="silver-port" min="-171,9,-428" max="-164,11,-435"/>
+        <cuboid id="gray-port" min="-171,9,-388" max="-164,11,-381"/>
+    </union>
+    <union id="yellow-port">
+        <cuboid id="magenta-port" min="-452,9,-389" max="-445,11,-382"/>
+        <cuboid id="brown-port" min="-452,9,-429" max="-445,11,-436"/>
     </union>
     <circle id="yellowclock" center="-449,-409" radius="5"/><!--Yellowclock-->
     <circle id="blueclock" center="-168,-409" radius="5"/><!--Blueclock-->
 <!--Applying-->
-    <apply blockplace="no-safeties" region="play-area" message="You may not place safeties!"/>
-    <apply block-break="iron-rules" block-place="deny-all" region="iron" message="You may only break iron blocks here!"/>
-    <apply block-break="only-yellow" block-place="deny-all" use="only-yellow" region="bluemonus" message="You may not modify your entrances!"/>
-    <apply block-break="only-blue" block-place="deny-all" use="only-blue" region="yellowmonus" message="You may not modify your entrances!"/>
+    <apply block="deny-all" region="spawns" message="You may not edit any spawn!"/>
+    <apply block-place="no-safeties" region="play-area" message="You may not place safeties!"/>
     <apply block="no-break" region="play-area" message="You may not modify map blocks!"/>
+    <apply block-break="iron-rules" block-place="deny-all" region="iron" message="You may only break iron blocks here!"/>
     <apply enter="only-yellow" block="yellowwoolrooms" use="only-yellow" region="ywoolrooms" message="You may not enter your wool rooms!"/>
     <apply enter="only-blue" block="bluewoolrooms" use="only-blue" region="bwoolrooms" message="You may not enter your wool rooms!"/>
+    <apply block-break="only-yellow" block-place="deny-all" use="only-yellow" region="blue-ent" message="You may not modify your entrances!"/>
+    <apply block-break="only-blue" block-place="deny-all" use="only-blue" region="yellow-ent" message="You may not modify your entrances!"/>
     <apply enter="only-yellow" region="yellowspawn" message="You may not enter the enemy spawn!"/>
     <apply enter="only-blue" region="bluespawn" message="You may not enter the enemy spawn!"/>
-    <apply block="no-void" region="yes-void" message="You may not build in the void!"/>
+    <apply block="no-void" region="void" message="You may not build in the void!"/>
     <apply block-break="never" region="woolindicator" message="You may not break this!"/>
     <apply enter="only-yellow" region="blueclock" message="You may not enter this!"/>
     <apply enter="only-blue" region="yellowclock" message="You may not enter this!"/>
-    <apply block="deny-all" region="spawns" message="You may not edit any spawn!"/>
     <apply block="deny-all" region="woolrooms" message="You may not edit the wool rooms!"/>
 </regions>
 <!--Portals-->
 <portals>
     <portal x="@-248" y="@16" z="@-433" filter="only-blue">
-        <region id="bluemonus"/>
+        <region id="blue-port"/>
 	</portal>
     <portal x="@-369" y="@16" z="@-385" filter="only-yellow">
-        <region id="yellowmonus"/>
+        <region id="yellow-port"/>
 	</portal>
     <portal x="@-169" y="@19" z="@-409">
         <region>
