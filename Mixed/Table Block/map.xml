@@ -178,7 +178,7 @@
     <apply enter="only-blue" region="yellowclock" message="You may not enter here!"/>
     <apply block="deny-all" region="woolrooms" message="You may not edit the wool rooms!"/>
     <apply block="deny-all" region="clocks" message="You may not edit your hour glass"/>
-	<apply block="deny-all" region="platforms" message="You may not edit the platforms"/>
+    <apply block="deny-all" region="platforms" message="You may not edit the platforms"/>
 </regions>
 <!--Portals-->
 <portals>
