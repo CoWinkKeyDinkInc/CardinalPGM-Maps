@@ -1,6 +1,6 @@
 <map proto="1.4.0">
 <name>Table Block</name>
-<version>1.0.0</version>
+<version>1.1.0</version>
 <objective>Break into the enemy's monuments and bring back the wools that are inside.</objective>
 <!--  Map authors & contributors.  -->
 <authors>
@@ -92,25 +92,6 @@
             <material>wool</material>
         </any>
     </deny>
-    <filter id="no-break">
-        <not>
-            <not>
-                <all>
-                    <any>
-                        <block>wood</block>
-                        <block>cobblestone</block>
-                        <block>iron block</block>
-                        <block>obsidian</block>
-                        <block>wood button</block>
-                        <block>workbench</block>
-                        <block>fence</block>
-                        <block>lever</block>
-                        <block>wood plate</block>
-                    </any>
-                </all>
-            </not>
-        </not>
-    </filter>
     <filter id="iron-rules">
         <not>
             <not>
@@ -126,8 +107,8 @@
 <!--Regions-->
 <regions>
     <union id="spawns">
-        <rectangle id="bluespawn" min="-127,-421" max="-146,-396"/>
-        <rectangle id="yellowspawn" min="-490,-397" max="-470,-421"/>
+        <rectangle id="bluespawn" min="-142,-416" max="-126,-401"/>
+        <rectangle id="yellowspawn" min="-489,-416" max="-474,-401"/>
     </union>
     <union id="gaps">
         <rectangle min="-186,-445" max="-180,-371"/>
@@ -173,12 +154,17 @@
         <cuboid id="magenta-port" min="-452,9,-389" max="-445,11,-382"/>
         <cuboid id="brown-port" min="-452,9,-429" max="-445,11,-436"/>
     </union>
-    <circle id="yellowclock" center="-449,-409" radius="5"/><!--Yellowclock-->
-    <circle id="blueclock" center="-168,-409" radius="5"/><!--Blueclock-->
+    <union id="clocks">
+        <circle id="yellowclock" center="-448.5,-408.5" radius="5.5"/><!--Yellowclock-->
+        <circle id="blueclock" center="-167.5,-408.5" radius="5.5"/><!--Blueclock-->
+    </union>
+    <union id="platforms">
+        <cuboid id="yellowplat" min="-370,15,-386" max="-367,19,-383"/>
+        <cuboid id="blueplat" min="-246,15,-431" max="-249,19,-434"/>
+    </union>
 <!--Applying-->
     <apply block="deny-all" region="spawns" message="You may not edit any spawn!"/>
     <apply block-place="no-safeties" region="play-area" message="You may not place safeties!"/>
-    <apply block="no-break" region="play-area" message="You may not modify map blocks!"/>
     <apply block-break="iron-rules" block-place="deny-all" region="iron" message="You may only break iron blocks here!"/>
     <apply enter="only-yellow" block="yellowwoolrooms" use="only-yellow" region="ywoolrooms" message="You may not enter your wool rooms!"/>
     <apply enter="only-blue" block="bluewoolrooms" use="only-blue" region="bwoolrooms" message="You may not enter your wool rooms!"/>
@@ -187,10 +173,12 @@
     <apply enter="only-yellow" region="yellowspawn" message="You may not enter the enemy spawn!"/>
     <apply enter="only-blue" region="bluespawn" message="You may not enter the enemy spawn!"/>
     <apply block="no-void" region="void" message="You may not build in the void!"/>
-    <apply block-break="never" region="woolindicator" message="You may not break this!"/>
-    <apply enter="only-yellow" region="blueclock" message="You may not enter this!"/>
-    <apply enter="only-blue" region="yellowclock" message="You may not enter this!"/>
+    <apply block-break="deny-all" region="woolindicator" message="You may not break this!"/>
+    <apply enter="only-yellow" region="blueclock" message="You may not enter here!"/>
+    <apply enter="only-blue" region="yellowclock" message="You may not enter here!"/>
     <apply block="deny-all" region="woolrooms" message="You may not edit the wool rooms!"/>
+    <apply block="deny-all" region="clocks" message="You may not edit your hour glass"/>
+	<apply block="deny-all" region="platforms" message="You may not edit the platforms"/>
 </regions>
 <!--Portals-->
 <portals>
