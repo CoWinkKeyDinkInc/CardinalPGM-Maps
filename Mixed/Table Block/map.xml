@@ -7,7 +7,7 @@
     <author uuid="bbcafea0-53cf-4d29-9dd9-27f383d02faa" contribution="Map Builder"/><!--Spintown-->
     <author uuid="7cbf2168-7f49-4fb3-aea8-6df8048a7ade" contribution="XML"/><!--nigges60-->
     <author uuid="5c79d2c9-a4f0-4343-a84b-e1720f13009b" contribution="Fixed XML"/><!--CoWinkKeyDinkInc-->
-	<author uuid="3079b474-d80c-4709-9a4b-bb1212a166b0" contribution="Fixed XML"/><!--Lmmb74-->
+    <author uuid="3079b474-d80c-4709-9a4b-bb1212a166b0" contribution="Fixed XML"/><!--Lmmb74-->
 </authors>
 <contributors>
     <contributor uuid="3518f310-17e9-4d7c-b383-7735aeeba65a" contribution="MCEdit"/><!--Lmac77-->
@@ -186,10 +186,10 @@
 <portals>
     <portal x="@-248" y="@16" z="@-433" filter="only-blue">
         <region id="blue-port"/>
-	</portal>
+    </portal>
     <portal x="@-369" y="@16" z="@-385" filter="only-yellow">
         <region id="yellow-port"/>
-	</portal>
+    </portal>
     <portal x="@-169" y="@19" z="@-409">
         <region>
             <cuboid min="-169,2,-428" max="-167,4,-429"/><!--Silver-->
