@@ -139,12 +139,12 @@
         <rectangle id="play-area" min="-492,-446" max="-125,-372"/>
     </negative>
     <union id="blue-ent">
-        <cuboid id="silver" min="-171,10,-428" max="-164,12,-435"/>
-        <cuboid id="gray" min="-171,10,-388" max="-164,12,-381"/>
+        <cuboid id="silver" min="-171,11,-428" max="-164,12,-435"/>
+        <cuboid id="gray" min="-171,11,-388" max="-164,12,-381"/>
     </union>
     <union id="yellow-ent">
-        <cuboid id="magenta" min="-452,10,-389" max="-445,12,-382"/>
-        <cuboid id="brown" min="-452,10,-429" max="-445,12,-436"/>
+        <cuboid id="magenta" min="-452,11,-389" max="-445,12,-382"/>
+        <cuboid id="brown" min="-452,11,-429" max="-445,12,-436"/>
     </union>
     <union id="blue-port">
         <cuboid id="silver-port" min="-171,9,-428" max="-164,11,-435"/>
@@ -163,22 +163,22 @@
         <cuboid id="blueplat" min="-246,15,-431" max="-249,19,-434"/>
     </union>
 <!--Applying-->
-    <apply block="deny-all" region="spawns" message="You may not edit any spawn!"/>
+    <apply block="never" region="spawns" message="You may not edit any spawn!"/>
     <apply block-place="no-safeties" region="play-area" message="You may not place safeties!"/>
-    <apply block-break="iron-rules" block-place="deny-all" region="iron" message="You may only break iron blocks here!"/>
+    <apply block-break="iron-rules" block-place="never" region="iron" message="You may only break iron blocks here!"/>
     <apply enter="only-yellow" block="yellowwoolrooms" use="only-yellow" region="ywoolrooms" message="You may not enter your wool rooms!"/>
     <apply enter="only-blue" block="bluewoolrooms" use="only-blue" region="bwoolrooms" message="You may not enter your wool rooms!"/>
-    <apply block-break="only-yellow" block-place="deny-all" use="only-yellow" region="blue-ent" message="You may not modify your entrances!"/>
-    <apply block-break="only-blue" block-place="deny-all" use="only-blue" region="yellow-ent" message="You may not modify your entrances!"/>
+    <apply block-break="only-yellow" block-place="never" region="blue-ent" message="You may not modify your entrances!"/>
+    <apply block-break="only-blue" block-place="never" region="yellow-ent" message="You may not modify your entrances!"/>
     <apply enter="only-yellow" region="yellowspawn" message="You may not enter the enemy spawn!"/>
     <apply enter="only-blue" region="bluespawn" message="You may not enter the enemy spawn!"/>
     <apply block="no-void" region="void" message="You may not build in the void!"/>
-    <apply block-break="deny-all" region="woolindicator" message="You may not break this!"/>
+    <apply block-break="never" region="woolindicator" message="You may not break this!"/>
     <apply enter="only-yellow" region="blueclock" message="You may not enter here!"/>
     <apply enter="only-blue" region="yellowclock" message="You may not enter here!"/>
-    <apply block="deny-all" region="woolrooms" message="You may not edit the wool rooms!"/>
-    <apply block="deny-all" region="clocks" message="You may not edit your hour glass"/>
-	<apply block="deny-all" region="platforms" message="You may not edit the platforms"/>
+    <apply block="never" region="woolrooms" message="You may not edit the wool rooms!"/>
+    <apply block="never" region="clocks" message="You may not edit your hour glass"/>
+    <apply block="never" region="platforms" message="You may not edit the platforms"/>
     <apply enter="only-yellow" region="yellow-iron" message="You may only enter your iron supplies room!"/>
     <apply enter="only-blue" region="blue-iron" message="You may only enter your iron supplies room!"/>
 </regions>
