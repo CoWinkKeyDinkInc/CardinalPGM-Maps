@@ -18,8 +18,8 @@
         <item slot="28" amount="1">arrow</item>
         <potion duration="10">damage resistance</potion>
         <chestplate enchantment="protection explosions:2">chainmail chestplate</chestplate>
-        <item slot="2" damage="-3000" attributes="generic.attackDamage:add:7">diamond pickaxe</item>
-        <item slot="27" damage="-3000" name="`6TNT Defuser" lore="`7Right click to defuse team griefer's TNT|`7Does not work in `9water|`7Use `a/report `7to alert the staff">shears</item>
+        <item slot="2" unbreakable="true" attributes="generic.attackDamage:add:7">diamond pickaxe</item>
+        <item slot="27" unbreakable="true" name="`6TNT Defuser" lore="`7Right click to defuse team griefer's TNT|`7Does not work in `9water|`7Use `a/report `7to alert the staff">shears</item>
         <item slot="11" amount="32">nether fence</item>
         <item slot="31" amount="32">step</item>
         <item slot="22" amount="16">ladder</item>

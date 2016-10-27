@@ -27,15 +27,15 @@
         <item slot="8" amount="32">golden carrot</item>
         <item slot="28" amount="1">arrow</item>
         <potion duration="5" amplifier="3">heal</potion>
-        <chestplate enchantment="protection projectile:2" damage="-3000">chainmail chestplate</chestplate>
+        <chestplate enchantment="protection projectile:2" unbreakable="true">chainmail chestplate</chestplate>
     </kit>
     <kit name="pink" parents="spawn">
-        <leggings  color="FF5CFA" damage="-3000">leather leggings</leggings>
-        <boots enchantment="protection fall:2;protection environmental:1" color="FF5CFA" damage="-3000">leather boots</boots>
+        <leggings  color="FF5CFA" unbreakable="true">leather leggings</leggings>
+        <boots enchantment="protection fall:2;protection environmental:1" color="FF5CFA" unbreakable="true">leather boots</boots>
     </kit>
     <kit name="yellow" parents="spawn">
-        <leggings  color="FFFF5C" damage="-3000">leather leggings</leggings>
-        <boots enchantment="protection fall:2;protection environmental:1" color="FFFF5C" damage="-3000">leather boots</boots>
+        <leggings  color="FFFF5C" unbreakable="true">leather leggings</leggings>
+        <boots enchantment="protection fall:2;protection environmental:1" color="FFFF5C" unbreakable="true">leather boots</boots>
     </kit>
 </kits>
 <toolrepair>

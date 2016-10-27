@@ -14,13 +14,13 @@
 </teams>
 <kits>
     <kit name="spawn" force="true">
-        <item slot="0" damage="-3000">stone sword</item>
-        <item slot="1" damage="-3000">bow</item>
+        <item slot="0" unbreakable="true">stone sword</item>
+        <item slot="1" unbreakable="true">bow</item>
         <item slot="6" amount="32">golden carrot</item>
         <item slot="7" amount="2">golden apple</item>
         <item slot="28" amount="16">arrow</item>
         <leggings>iron leggings</leggings>
-        <item slot="4" damage="-3000">shears</item>
+        <item slot="4" unbreakable="true">shears</item>
         <item slot="5" amount="16">vine</item>
         <potion duration="oo" amplifier="1" ambient="true">fast digging</potion>
     </kit>
@@ -55,9 +55,9 @@
     </default>
 </spawns>
 <killreward>
-    <item>golden apple</item>
-    <item amount="8">arrow</item>
     <item amount="5">vine</item>
+    <item amount="8">arrow</item>
+    <item>golden apple</item>
 </killreward>
 <killreward>
     <filter>
