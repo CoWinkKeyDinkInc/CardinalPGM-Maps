@@ -65,9 +65,9 @@
     <damage>fall</damage>
 </disabledamage>
 <itemremove>
-    <item>iron sword</item>
-    <item>bow</item>
     <item>arrow</item>
+    <item>bow</item>
+    <item>iron sword</item>
     <item>leather chestplate</item>
 </itemremove>
 <include src="blitz-global.xml"/>

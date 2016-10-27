@@ -150,29 +150,26 @@
             <cuboid id="blueplat" min="-246,15,-431" max="-249,19,-434"/>
         </union>
         <!--Applying-->
-        <apply block="never" region="spawns" message="You may not edit any spawn!"/>
-        <apply block-place="no-safeties" region="play-area" message="You may not place safeties!"/>
-        <apply block="deny-all" region="void" message="You may not build in the void!"/>
         <apply block-break="iron-rules" block-place="never" region="iron" message="You may only break iron blocks here!"/>
-        <apply block="never" region="woolrooms" message="You may not edit the wool rooms!"/>
         <apply block-break="never" region="woolindicator" message="You may not break this!"/>
+        <apply block-break="only-blue" block-place="never" region="yellow-entrances" message="You may not modify your entrances!"/>
+        <apply block-break="only-yellow" block-place="never" region="blue-entrances" message="You may not modify your entrances!"/>
+        <apply block-place="no-safeties" region="play-area" message="You may not place safeties!"/>
+
+        <apply block="deny-all" region="void" message="You may not build in the void!"/>
         <apply block="never" region="clocks" message="You may not edit your hour glass"/>
         <apply block="never" region="platforms" message="You may not edit the platforms"/>
+        <apply block="never" region="spawns" message="You may not edit any spawn!"/>
+        <apply block="never" region="woolrooms" message="You may not edit the wool rooms!"/>
 
-        <apply enter="only-yellow" use="only-yellow" region="ywoolrooms" message="You may not enter your wool rooms!"/>
-        <apply enter="only-blue" use="only-blue" region="bwoolrooms" message="You may not enter your wool rooms!"/>
-
-        <apply block-break="only-yellow" block-place="never" region="blue-entrances" message="You may not modify your entrances!"/>
-        <apply block-break="only-blue" block-place="never" region="yellow-entrances" message="You may not modify your entrances!"/>
-
-        <apply enter="only-yellow" region="yellowspawn" message="You may not enter the enemy spawn!"/>
-        <apply enter="only-blue" region="bluespawn" message="You may not enter the enemy spawn!"/>
-
-        <apply enter="only-yellow" region="blueclock" message="You may not enter here!"/>
-        <apply enter="only-blue" region="yellowclock" message="You may not enter here!"/>
-
-        <apply enter="only-yellow" region="yellow-iron" message="You may only enter your iron supplies room!"/>
         <apply enter="only-blue" region="blue-iron" message="You may only enter your iron supplies room!"/>
+        <apply enter="only-blue" region="bluespawn" message="You may not enter the enemy spawn!"/>
+        <apply enter="only-blue" region="yellowclock" message="You may not enter here!"/>
+        <apply enter="only-blue" use="only-blue" region="bwoolrooms" message="You may not enter your wool rooms!"/>
+        <apply enter="only-yellow" region="blueclock" message="You may not enter here!"/>
+        <apply enter="only-yellow" region="yellow-iron" message="You may only enter your iron supplies room!"/>
+        <apply enter="only-yellow" region="yellowspawn" message="You may not enter the enemy spawn!"/>
+        <apply enter="only-yellow" use="only-yellow" region="ywoolrooms" message="You may not enter your wool rooms!"/>
     </regions>
     <!--Portals-->
     <portals>
@@ -263,19 +260,19 @@
         </renewable>
     </renewables-->
     <itemremove>
+        <item>arrow</item>
+        <item>bow</item>
+        <item>cobblestone</item>
+        <item>cooked beef</item>
         <item>diamond pickaxe</item>
         <item>iron axe</item>
-        <item>bow</item>
-        <item>cooked beef</item>
-        <item>arrow</item>
-        <item>leather helmet</item>
-        <item>leather chestplate</item>
-        <item>leather leggings</item>
         <item>leather boots</item>
+        <item>leather chestplate</item>
+        <item>leather helmet</item>
+        <item>leather leggings</item>
         <item>obsidian</item>
-        <item>wood</item>
         <item>stained clay</item>
-        <item>cobblestone</item>
+        <item>wood</item>
     </itemremove>
     <maxbuildheight>36</maxbuildheight>
 </map>

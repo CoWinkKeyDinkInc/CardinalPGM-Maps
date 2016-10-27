@@ -46,21 +46,21 @@
 </kits>
 <maxbuildheight>48</maxbuildheight>
 <toolrepair>
-    <tool>iron sword</tool>
     <tool>bow</tool>
     <tool>iron axe</tool>
+    <tool>iron sword</tool>
 </toolrepair>
 <itemremove>
     <!-- remove flowers so nothing can be dyed -->
     <item>37</item>
     <item>38</item>
-    <item>log</item>
-    <item>wood</item>
-    <item>glass</item>
+    <item>arrow</item>
     <item>cooked fish</item>
+    <item>glass</item>
+    <item>log</item>
     <item>seeds</item>
     <item>string</item>
-    <item>arrow</item>
+    <item>wood</item>
 </itemremove>
 <filters>
     <filter name="no-void" parents="allow-all">
@@ -88,8 +88,8 @@
     </apply>
     <!--  supply room protection  -->
     <apply block="deny-all" message="You may not break or place blocks in the storage room!">
-        <cuboid name="purple-storage-room" min="-89,6,60" max="-107,14,43"/>
         <cuboid name="orange-storage-room" min="89,6,46" max="107,14,63"/>
+        <cuboid name="purple-storage-room" min="-89,6,60" max="-107,14,43"/>
     </apply>
     <!--  prevent teams from entering each other's spawns  -->
     <apply enter="only-purple" message="You may not enter purple's storage room!">

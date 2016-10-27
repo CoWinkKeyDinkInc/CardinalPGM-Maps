@@ -92,21 +92,21 @@
     <item amount="5" damage="5">wool</item>
 </killreward>
 <toolrepair>
-    <tool>stone sword</tool>
     <tool>bow</tool>
     <tool>shears</tool>
+    <tool>stone sword</tool>
 </toolrepair>
 <itemremove>
     <item>arrow</item>
-    <item>leather helmet</item>
-    <item>leather chestplate</item>
-    <item>leather leggings</item>
-    <item>leather boots</item>
     <item>golden carrot</item>
+    <item>leather boots</item>
+    <item>leather chestplate</item>
+    <item>leather helmet</item>
+    <item>leather leggings</item>
 </itemremove>
 <tnt>
-    <instantignite>on</instantignite>
     <fuse>3s</fuse>
+    <instantignite>on</instantignite>
     <power>2</power>
 </tnt>
 <disabledamage>

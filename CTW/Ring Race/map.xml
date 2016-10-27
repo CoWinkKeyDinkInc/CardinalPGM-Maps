@@ -41,18 +41,18 @@
 </kits>
 <maxbuildheight>40</maxbuildheight>
 <toolrepair>
-    <tool>iron sword</tool>
-    <tool>bow</tool>
-    <tool>iron pickaxe</tool>
-    <tool>iron axe</tool>
     <tool>arrow</tool>
+    <tool>bow</tool>
+    <tool>iron axe</tool>
+    <tool>iron pickaxe</tool>
+    <tool>iron sword</tool>
 </toolrepair>
 <itemremove>
+    <item>cooked fish</item>
+    <item>glass</item>
+    <item>iron sword</item>
     <item>log</item>
     <item>wood</item>
-    <item>cooked fish</item>
-    <item>iron sword</item>
-    <item>glass</item>
 </itemremove>
 <filters>
     <filter name="no-void" parents="allow-all">

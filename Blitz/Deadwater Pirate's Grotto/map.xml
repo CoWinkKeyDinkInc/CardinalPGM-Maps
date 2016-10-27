@@ -61,17 +61,17 @@
 <regions>
     <above id="above36" y="35"/>
     <union id="water">
-        <cuboid id="blue-poison" min="120,27,62"  max="107,29,55"/>
+        <cuboid id="blue-center" min="98,25,21"   max="128,27,12"/>
         <cuboid id="blue-junction" min="117,27,43"  max="123,29,35"/>
         <cuboid id="blue-left" min="91,27,27"   max="106,29,42"/>
+        <cuboid id="blue-poison" min="120,27,62"  max="107,29,55"/>
         <cuboid id="blue-right" min="123,27,31"  max="138,29,38"/>
-        <cuboid id="blue-center" min="98,25,21"   max="128,27,12"/>
         <cuboid id="lower-pools" min="83,15,-10"  max="142,17,10"/>
-        <cuboid id="red-poison" min="105,27,-56" max="118,29,-62"/>
+        <cuboid id="red-center" min="127,25,-21" max="97,27,-12"/>
         <cuboid id="red-junction" min="108,27,-43" max="102,29,-35"/>
         <cuboid id="red-left" min="119,27,-42" max="134,29,-27"/>
+        <cuboid id="red-poison" min="105,27,-56" max="118,29,-62"/>
         <cuboid id="red-right" min="102,27,-31" max="87,29,-38"/>
-        <cuboid id="red-center" min="127,25,-21" max="97,27,-12"/>
     </union>
     <rectangle id="blueBase" min="120,66"  max="106,50"/>
     <rectangle id="redBase"  min="104,-67" max="118,-51"/>
@@ -89,13 +89,13 @@
     </apply>
 </regions>
 <itemremove>
-    <item>iron sword</item>
     <item>bow</item>
-    <item>iron chestplate</item>
-    <item>leather leggings</item>
-    <item>leather boots</item>
-    <item>golden apple</item>
     <item>bucket</item>
+    <item>golden apple</item>
+    <item>iron chestplate</item>
+    <item>iron sword</item>
+    <item>leather boots</item>
+    <item>leather leggings</item>
     <item>milk bucket</item>
 </itemremove>
 <killreward>

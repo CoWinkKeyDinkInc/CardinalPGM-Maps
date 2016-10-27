@@ -41,13 +41,13 @@
     </kit>
 </kits>
 <itemremove>
-    <item>bread</item>
     <item>bow</item>
-    <item>stone sword</item>
-    <item>leather helmet</item>
-    <item>leather chestplate</item>
+    <item>bread</item>
     <item>chainmail leggings</item>
     <item>leather boots</item>
+    <item>leather chestplate</item>
+    <item>leather helmet</item>
+    <item>stone sword</item>
 </itemremove>
 <killreward>
     <item amount="8">arrow</item>

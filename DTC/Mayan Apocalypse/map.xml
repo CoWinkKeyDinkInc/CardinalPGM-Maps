@@ -82,20 +82,20 @@
     </core>
 </cores>
 <toolrepair>
+    <tool>arrow</tool>
+    <tool>bow</tool>
+    <tool>diamond pickaxe</tool>
     <tool>iron axe</tool>
     <tool>iron sword</tool>
-    <tool>diamond pickaxe</tool>
-    <tool>bow</tool>
-    <tool>arrow</tool>
 </toolrepair>
 <itemremove>
-    <item>flint</item>
-    <item>wood</item>
-    <item>log</item>
     <item>cooked fish</item>
-    <item>leather helmet</item>
+    <item>flint</item>
     <item>leather chestplate</item>
-    <item>string</item>
+    <item>leather helmet</item>
+    <item>log</item>
     <item>seeds</item>
+    <item>string</item>
+    <item>wood</item>
 </itemremove>
 </map>

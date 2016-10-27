@@ -39,20 +39,20 @@
     </kit>
 </kits>
 <toolrepair>
-    <tool>stone sword</tool>
     <tool>bow</tool>
-    <tool>iron pickaxe</tool>
     <tool>iron axe</tool>
+    <tool>iron pickaxe</tool>
+    <tool>stone sword</tool>
 </toolrepair>
 <itemremove>
     <item>chainmail chestplate</item>
+    <item>chainmail chestplate</item>
+    <item>golden carrot</item>
     <item>leather boots</item>
     <item>leather leggings</item>
-    <item>wood</item>
     <item>string</item>
-    <item>chainmail chestplate</item>
     <item>web</item>
-    <item>golden carrot</item>
+    <item>wood</item>
 </itemremove>
 <spawns>
     <spawn team="yellow" kit="yellow" yaw="90">
@@ -172,12 +172,12 @@
 </wools>
 <maxbuildheight>43</maxbuildheight>
 <itemremove>
-    <item>seeds</item>
     <item>red rose</item>
+    <item>seeds</item>
     <item>yellow flower</item>
 </itemremove>
 <killreward>
-    <item amount="8" damage="2">wood</item>
     <item amount="1">golden apple</item>
+    <item amount="8" damage="2">wood</item>
 </killreward>
 </map>

@@ -105,8 +105,8 @@
 </filters>
 <regions>
     <union name="red-wool-rooms">
-        <rectangle name="lime-room" min="-39,-46" max="-50,-58"/>
         <rectangle name="green-room" min="40,-47" max="51,-58"/>
+        <rectangle name="lime-room" min="-39,-46" max="-50,-58"/>
     </union>
     <apply block-break="only-red-sp" block-place="deny-all" use="only-red-usage">
         <region name="red-wool-rooms"/>
@@ -115,8 +115,8 @@
         <region name="red-wool-rooms"/>
     </apply>
     <union name="green-wool-rooms">
-        <rectangle name="yellow-room" min="-39,48" max="-50,59"/>
         <rectangle name="red-room" min="40,48" max="51,59"/>
+        <rectangle name="yellow-room" min="-39,48" max="-50,59"/>
     </union>
     <apply block-break="only-green-sp" block-place="deny-all" use="only-green-usage">
         <region name="green-wool-rooms"/>
@@ -175,26 +175,26 @@
     </apply>
 </regions>
 <toolrepair>
-    <tool>stone sword</tool>
-    <tool>iron spade</tool>
-    <tool>iron pickaxe</tool>
     <tool>bow</tool>
+    <tool>iron pickaxe</tool>
+    <tool>iron spade</tool>
     <tool>stone axe</tool>
+    <tool>stone sword</tool>
 </toolrepair>
 <itemremove>
-    <item>glass</item>
-    <item>leather helmet</item>
-    <item>leather chestplate</item>
-    <item>leather leggings</item>
-    <item>leather boots</item>
-    <item>fence</item>
-    <item>string</item>
-    <item>chainmail helmet</item>
+    <item>5:3</item>
     <item>bucket</item>
-    <item>water bucket</item>
+    <item>chainmail helmet</item>
     <item>cocoa</item>
     <item>cooked fish</item>
-    <item>5:3</item>
+    <item>fence</item>
+    <item>glass</item>
+    <item>leather boots</item>
+    <item>leather chestplate</item>
+    <item>leather helmet</item>
+    <item>leather leggings</item>
+    <item>string</item>
+    <item>water bucket</item>
 </itemremove>
 <playable>
     <rectangle min="-200,-200" max="200,200"/>

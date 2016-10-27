@@ -12,7 +12,7 @@
 </teams>
 <blitz>
     <time>10m</time>
-    <lives>1</lives>      
+    <lives>2</lives>
 </blitz>
 <spawns>
     <spawn team="blue" kit="blue" yaw="90">
@@ -50,20 +50,20 @@
     <item amount="8">arrow</item>
 </killreward>
 <tnt>
+    <blockdamage>off</blockdamage>
+    <friendly-defuse>off</friendly-defuse>
     <instantignite>on</instantignite>
     <licensing>off</licensing>
-    <friendly-defuse>off</friendly-defuse>
-    <blockdamage>off</blockdamage>
 </tnt>
 <itemremove>
-    <item>leather boots</item>
-    <item>chainmail chestplate</item>
-    <item>leather leggings</item>
     <item>arrow</item>
+    <item>chainmail chestplate</item>
+    <item>leather boots</item>
+    <item>leather leggings</item>
 </itemremove>
 <toolrepair>
-    <tool>iron sword</tool>
     <tool>bow</tool>
+    <tool>iron sword</tool>
 </toolrepair>
 <regions>
     <rectangle name="playable" min="-oo,-oo" max="oo,oo"/>

@@ -55,39 +55,39 @@
     <damage>fall</damage>
 </disabledamage>
 <itemremove>
-    <item>iron sword</item>
+    <item>arrow</item>
     <item>bow</item>
     <item>chainmail chestplate</item>
-    <item>leather leggings</item>
+    <item>diamond pickaxe</item>
+    <item>diode</item>
+    <item>dispenser</item>
+    <item>iron sword</item>
+    <item>ladder</item>
     <item>leather boots</item>
     <item>leather helmet</item>
-    <item>diamond pickaxe</item>
-    <item>shears</item>
-    <item>arrow</item>
-    <item>stained clay</item>
-    <item>stained glass</item>
+    <item>leather leggings</item>
+    <item>lever</item>
     <item>nether fence</item>
-    <item>step</item>
-    <item>ladder</item>
-    <item>trap door</item>
-    <item>stone plate</item>
     <item>piston base</item>
     <item>redstone block</item>
-    <item>redstone</item>
-    <item>stone button</item>
-    <item>lever</item>
-    <item>redstone torch on</item>
-    <item>diode</item>
     <item>redstone comparator</item>
-    <item>dispenser</item>
+    <item>redstone torch on</item>
+    <item>redstone</item>
+    <item>shears</item>
+    <item>stained clay</item>
+    <item>stained glass</item>
+    <item>step</item>
+    <item>stone button</item>
+    <item>stone plate</item>
+    <item>trap door</item>
 </itemremove>
 <toolrepair>
-    <tool>iron sword</tool>
-    <tool>iron axe</tool>
     <tool>bow</tool>
     <tool>chainmail chestplate</tool>
-    <tool>leather leggings</tool>
+    <tool>iron axe</tool>
+    <tool>iron sword</tool>
     <tool>leather boots</tool>
+    <tool>leather leggings</tool>
 </toolrepair>
 <killreward>
     <item amount="1">golden apple</item>

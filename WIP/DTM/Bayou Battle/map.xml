@@ -27,16 +27,16 @@
     </kit>
 </kits>
 <toolrepair>
-    <tool>iron sword</tool>
     <tool>bow</tool>
-    <tool>iron pickaxe</tool>
     <tool>iron axe</tool>
+    <tool>iron pickaxe</tool>
+    <tool>iron sword</tool>
 </toolrepair>
 <itemremove>
+    <item>arrow</item>
+    <item>cooked fish</item>
+    <item>glass</item>
     <item>log</item>
     <item>wood</item>
-    <item>glass</item>
-    <item>cooked fish</item>
-    <item>arrow</item>
 </itemremove>
 </map>

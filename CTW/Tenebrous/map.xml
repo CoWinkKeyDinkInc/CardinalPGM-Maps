@@ -39,17 +39,17 @@
 </kits>
 <maxbuildheight>38</maxbuildheight>
 <toolrepair>
-    <tool>iron sword</tool>
     <tool>bow</tool>
-    <tool>iron pickaxe</tool>
     <tool>iron axe</tool>
+    <tool>iron pickaxe</tool>
+    <tool>iron sword</tool>
 </toolrepair>
 <itemremove>
-    <item>log</item>
-    <item>wood</item>
-    <item>wood:1</item>
     <item>baked potato</item>
     <item>iron sword</item>
+    <item>log</item>
+    <item>wood:1</item>
+    <item>wood</item>
 </itemremove>
 <filters>
     <filter name="no-void" parents="allow-all">
