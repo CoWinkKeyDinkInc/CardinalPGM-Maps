@@ -71,4 +71,5 @@
     <item>leather chestplate</item>
 </itemremove>
 <include src="blitz-global.xml"/>
+<include src="tutorial.xml"/>
 </map>

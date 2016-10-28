@@ -1,4 +1,5 @@
 <map proto="1.3.5">
+<include src="tutorial.xml"/>
 <name>Arcus TE</name>
 <version>1.0.0</version>
 <objective>Por Poner.</objective>

@@ -1,5 +1,6 @@
 <map proto="1.4.0" game="Blitz">
 <include src="blitz-global.xml"/>
+<include src="tutorial.xml"/>
 <name>Deadwater: Pirate's Grotto</name>
 <version>1.2.1</version>
 <objective>Eliminate the other team within 6 minutes.</objective>

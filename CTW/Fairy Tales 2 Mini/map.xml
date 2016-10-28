@@ -1,4 +1,5 @@
 <map proto="1.3.6">
+<include src="tutorial.xml"/>
 <name>Fairy Tales 2: Mini</name>
 <version>2.0.0</version>
 <objective>Retrieve the wool from the enemy's side and place it on your team's monument</objective>

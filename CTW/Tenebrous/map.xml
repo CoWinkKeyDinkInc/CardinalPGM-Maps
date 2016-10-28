@@ -1,4 +1,5 @@
 <map proto="1.3.0">
+<include src="tutorial.xml"/>
 <name>Tenebrous</name>
 <version>1.0.0</version>
 <objective>Capture the wool from the enemies wool rooms and return them to your victory monument</objective>

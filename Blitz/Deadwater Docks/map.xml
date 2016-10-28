@@ -1,5 +1,6 @@
 <map proto="1.3.3">
 <include src="blitz-global.xml"/>
+<include src="tutorial.xml"/>
 <name>Deadwater Docks</name>
 <version>2.0.6</version>
 <objective>Kill all of your enemies before time runs out. You have 2 lives!</objective>

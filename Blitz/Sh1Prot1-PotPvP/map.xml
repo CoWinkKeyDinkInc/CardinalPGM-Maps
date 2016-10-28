@@ -98,4 +98,5 @@
     <alert after="3s">`aYou can download this map here: https://github.com/CoWinkKeyDinkInc/CardinalPGM-Maps | Thanks for using my maps :)</alert>
 </broadcasts>
 <blitz/>
+<include src="tutorial.xml"/>
 </map>
