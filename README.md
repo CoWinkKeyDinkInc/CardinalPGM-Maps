@@ -12,7 +12,7 @@ The best way to install CardinalPGM-Maps into your CardinalPGM server is to clon
  3. Go to File > Clone Repo
  4. Paste the URL into the URL text box, locate the maps folder and click on the clone repo button
  5. To update the maps repository, open up the repo in GitKraken and click pull
- 
+
 ### How to fork
 Repeat the same steps as seen above, but fork this repo, and use the link given on the fork repository.
 
@@ -20,6 +20,7 @@ Repeat the same steps as seen above, but fork this repo, and use the link given 
  - If you have a map that you want to be updated or fixed, submit a pull request!
  - If the pull request is a fix in a map, please only have one map involved in a commit and include pictures on aesthetic changes.
  - Use proper spacing and formatting in XML, spacing will make XML files much easier to read.
+    - **The official spacing is four spaces, do not space tags inside the `<map>` tag.**
  - Put this repo on your CardinalPGM server to test for errors.
  - Make sure to enable the `displayMapLoadErrors` property in `config.yml`, which can be located in the `Cardinal` folder which is inside the `plugins` folder.
 
