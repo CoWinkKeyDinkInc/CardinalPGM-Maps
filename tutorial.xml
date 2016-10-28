@@ -4,17 +4,17 @@
         <prefix>
             <stage title="Introduction">
                 <message>
-                    <line>You are `bspectating `rthe game and cannot interact with other players</line>
-                    <line>`aRight click `rto learn about this map</line>
+                    <line>You are `bspectating `rthe game and cannot interact with other players.</line>
+                    <line>`aRight click `rto learn about this map.</line>
                 </message>
             </stage>
         </prefix>
         <suffix>
             <stage title="Finish">
                 <message>
-                    <line>Join the game by using the `ateam selection hat `rin your inventory</line>
-                    <line>See the `ahow to book `rto learn more about our servers</line>
-                    <line>To join full teams or more perks, see `boc.tc/shop</line>
+                    <line>Join the game by using the `ateam selection hat `rin your inventory.</line>
+                    <line>Have fun!! This map was brought to you by CardinalPGM-Maps!!</line>
+                    <line>Click here to learn more: https://github.com/CoWinkKeyDinkInc/CardinalPGM-Maps</line>
                 </message>
             </stage>
         </suffix>
