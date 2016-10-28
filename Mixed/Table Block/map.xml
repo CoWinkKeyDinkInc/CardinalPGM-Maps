@@ -1,4 +1,5 @@
 <map proto="1.4.0">
+<include src="tutorial.xml"/>
 <name>Table Block</name>
 <version>1.2.1</version>
 <objective>Break into the enemy's monuments and bring back the wools that are inside.</objective>
@@ -274,5 +275,51 @@
     <item>stained clay</item>
     <item>wood</item>
 </itemremove>
-    <maxbuildheight>36</maxbuildheight>
+<maxbuildheight>36</maxbuildheight>
+<tutorial>
+    <stage title="King of the Hill">
+        <message>
+            <line>`rThis map is a `a`lCapture the Woll `r(CTW) and a `a`lDestroy the Monument `r(DTW)` map.</line>
+            <line>`rThe objective is to destroy the entrance (the monument) and return the wool to the player's spawn!</line>
+        </message>
+        <teleport>
+            <point yaw="90" pitch="50">42,48,0</point>
+        </teleport>
+    </stage>
+    <stage title="The Entrance">
+        <message>
+            <line>`rThis is an Entrance that belongs to `6Yellow`r. `1Blue `rmust break into the entrance to get one of the wools.</line>
+            <line>`rYou have to destory a decent amount of pieces to complete the objective.</line>
+            <line>`rTeams cannot enter their own entrance they have to defend, if they try, they get teleported...</line>
+        </message>
+        <teleport>
+            <point yaw="45" pitch="45">11,18,110</point>
+        </teleport>
+    </stage>
+    <stage title="The Platform">
+        <message>
+            <line>`l`4Over here! `rIt's a quick way to get to the front lines, but be careful! You might make an opening for the enemy! Now, back to the entrance...</line>
+        </message>
+        <teleport>
+            <point yaw="135" pitch="0">-1,2,100</point>
+        </teleport>
+    </stage>
+    <stage title="The Wool Room">
+        <message>
+            <line>`rThis is the inside of the entrance, nothing much other than a wool spawner and a portal. You use the portal to leave.</line>
+        </message>
+        <teleport>
+            <point yaw="135" pitch="0">-1,2,100</point>
+        </teleport>
+    </stage>
+    <stage title="The Hourglass">
+        <message>
+            <line>`rThis is the hour glass, which is where you're teleported after entering the portal.</line>
+            <line>`rThe enemy can't get in the hour glass, so you can safly stay inside and exit at your own pace.</line>
+        </message>
+        <teleport>
+            <point yaw="135" pitch="0">-1,2,100</point>
+        </teleport>
+    </stage>
+</tutorial>
 </map>
