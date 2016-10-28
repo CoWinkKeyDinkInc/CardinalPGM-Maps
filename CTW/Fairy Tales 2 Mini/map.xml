@@ -182,7 +182,7 @@
     <tool>stone sword</tool>
 </toolrepair>
 <itemremove>
-    <item>5:3</item>
+    <item>5:3</item> <!-- Jungle wood plank -->
     <item>bucket</item>
     <item>chainmail helmet</item>
     <item>cocoa</item>

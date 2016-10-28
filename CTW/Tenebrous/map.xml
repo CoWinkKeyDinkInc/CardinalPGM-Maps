@@ -48,7 +48,7 @@
     <item>baked potato</item>
     <item>iron sword</item>
     <item>log</item>
-    <item>wood:1</item>
+    <item>wood:1</item> <!-- Spruce wood plank -->
     <item>wood</item>
 </itemremove>
 <filters>
