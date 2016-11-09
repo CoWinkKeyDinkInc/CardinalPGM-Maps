@@ -157,12 +157,12 @@
     </union>
     <union id="woolrooms">
         <union id="ywoolrooms"><!--Wools yellow need to get-->
-            <cuboid id="silverwool" min="-173,0,-426" max="-162,10,-437"/>
-            <cuboid id="graywool" min="-173,0,-379" max="-162,10,-390"/>
+            <cuboid id="silverwool" min="-173,0,-426" max="-162,11,-437"/>
+            <cuboid id="graywool" min="-173,0,-379" max="-162,11,-390"/>
         </union>
         <union id="bwoolrooms"><!--Wools blue need to get-->
-            <cuboid id="magentawool" min="-454,0,-380" max="-443,10,-390"/>
-            <cuboid id="brownwool" min="-454,0,-427" max="-443,10,-438"/>
+            <cuboid id="magentawool" min="-454,0,-380" max="-443,11,-390"/>
+            <cuboid id="brownwool" min="-454,0,-427" max="-443,11,-438"/>
         </union>
     </union>
     <union id="iron">
@@ -290,9 +290,9 @@
     </destroyable>
 </destroyables>
 <modes>
-    <mode after="10m" material="gold block"/>
-    <mode after="20m" material="coal block"/>
-    <mode after="30m" material="glass"/>
+    <mode after="50s" material="gold block"/>
+    <mode after="100s" material="coal block"/>
+    <mode after="150s" material="glass"/>
 </modes>
 <renewables>
     <renewable rate="1" grow="true" particles="true" avoid-players="2" region="iron">
