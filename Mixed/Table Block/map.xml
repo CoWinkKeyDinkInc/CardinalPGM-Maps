@@ -199,10 +199,10 @@
         <cuboid id="blueplat" min="-246,15,-431" max="-249,19,-434"/>
     </union>
     <!--Applying-->
-    <apply block-break="iron-rules" block-place="never" region="iron" message="You may only break iron blocks here!"/>
-    <apply block-break="never" region="woolindicator" message="You may not break this!"/>
-    <apply block-break="only-blue" block-place="never" region="yellow-entrances" message="You may not modify your entrances!"/>
-    <apply block-break="only-yellow" block-place="never" region="blue-entrances" message="You may not modify your entrances!"/>
+    <apply block-break="iron-rules" block-place="deny-all" region="iron" message="You may only break iron blocks here!"/>
+    <apply block-break="deny-all" region="woolindicator" message="You may not break this!"/>
+    <apply block-break="only-blue" block-place="deny-all" region="yellow-entrances" message="You may not modify your entrances!"/>
+    <apply block-break="only-yellow" block-place="deny-all" region="blue-entrances" message="You may not modify your entrances!"/>
     <apply block-place="no-safeties" region="play-area" message="You may not place safeties!"/>
 
     <apply block="deny-all" region="void" message="You may not build in the void!"/>
@@ -290,9 +290,9 @@
     </destroyable>
 </destroyables>
 <modes>
-    <mode after="50s" material="gold block"/>
-    <mode after="100s" material="coal block"/>
-    <mode after="150s" material="glass"/>
+    <mode after="10m" material="gold block"/>
+    <mode after="20m" material="coal block"/>
+    <mode after="30m" material="glass"/>
 </modes>
 <renewables>
     <renewable rate="1" grow="true" particles="true" avoid-players="2" region="iron">
@@ -322,6 +322,10 @@
     <item>leather chestplate</item>
     <item>leather leggings</item>
     <item>leather boots</item>
+    <item>yellow flower</item>
+    <item>red rose</item>
+    <item>long grass</item>
+    <item>double plant</item>
 </itemremove>
 <toolrepair>
     <tool>stone sword</tool>
