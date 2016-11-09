@@ -170,7 +170,7 @@
         <rectangle id="blue-iron" min="-141,-447" max="-127,-429"/>
     </union>
     <negative id="void">
-        <rectangle id="play-area" min="-492,-446" max="-125,-372"/>
+        <rectangle id="play-area" min="-492,-446" max="-124,-371"/>
     </negative>
     <union id="entrances">
         <union id="blue-entrances">
@@ -275,7 +275,7 @@
     </wool>
 </wools>
 <!--Monuments-->
-<destroyables materials="obsidian;gold block;coal block;glass;air" mode-changes="true" completion="30%">
+<destroyables materials="obsidian;gold block;coal block;glass" mode-changes="true" completion="30%">
     <destroyable name="Silver Entrance" owner="blue-team">
         <region id="silver"/>
     </destroyable>
@@ -294,7 +294,7 @@
     <mode after="20m" material="coal block"/>
     <mode after="30m" material="glass"/>
 </modes>
-<!--renewables>
+<renewables>
     <renewable rate="1" grow="true" particles="true" avoid-players="2" region="iron">
         <renew-filter>
             <any>
@@ -307,7 +307,7 @@
             </any>
         </replace-filter>
     </renewable>
-</renewables-->
+</renewables>
 <itemremove>
     <item>arrow</item>
     <item>cobblestone</item>
