@@ -294,7 +294,7 @@
     <mode after="20m" material="coal block"/>
     <mode after="30m" material="glass"/>
 </modes>
-<renewables>
+<!--renewables>
     <renewable rate="1" grow="true" particles="true" avoid-players="2" region="iron">
         <renew-filter>
             <any>
@@ -307,7 +307,7 @@
             </any>
         </replace-filter>
     </renewable>
-</renewables>
+</renewables-->
 <itemremove>
     <item>arrow</item>
     <item>cobblestone</item>
@@ -326,6 +326,9 @@
     <item>red rose</item>
     <item>long grass</item>
     <item>double plant</item>
+    <item>grass</item>
+    <item>stone</item>
+    <item>stained clay</item>
 </itemremove>
 <toolrepair>
     <tool>stone sword</tool>
