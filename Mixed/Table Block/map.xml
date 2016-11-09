@@ -157,12 +157,12 @@
     </union>
     <union id="woolrooms">
         <union id="ywoolrooms"><!--Wools yellow need to get-->
-            <cuboid id="silverwool" min="-171,0,-428" max="-164,9,-435"/>
-            <cuboid id="graywool" min="-171,0,-388" max="-164,9,-381"/>
+            <cuboid id="silverwool" min="-173,0,-426" max="-162,10,-437"/>
+            <cuboid id="graywool" min="-173,0,-379" max="-162,10,-390"/>
         </union>
         <union id="bwoolrooms"><!--Wools blue need to get-->
-            <cuboid id="magentawool" min="-452,0,-389" max="-445,10,-382"/>
-            <cuboid id="brownwool" min="-452,0,-429" max="-445,10,-436"/>
+            <cuboid id="magentawool" min="-454,0,-380" max="-443,10,-390"/>
+            <cuboid id="brownwool" min="-454,0,-427" max="-443,10,-438"/>
         </union>
     </union>
     <union id="iron">
@@ -206,10 +206,10 @@
     <apply block-place="no-safeties" region="play-area" message="You may not place safeties!"/>
 
     <apply block="deny-all" region="void" message="You may not build in the void!"/>
-    <apply block="never" region="clocks" message="You may not edit your hour glass"/>
-    <apply block="never" region="platforms" message="You may not edit the platforms"/>
-    <apply block="never" region="spawns" message="You may not edit any spawn!"/>
-    <apply block="never" region="woolrooms" message="You may not edit the wool rooms!"/>
+    <apply block="deny-all" region="clocks" message="You may not edit your hour glass"/>
+    <apply block="deny-all" region="platforms" message="You may not edit the platforms"/>
+    <apply block="deny-all" region="spawns" message="You may not edit any spawn!"/>
+    <apply block="deny-all" region="woolrooms" message="You may not edit the wool rooms!"/>
 
     <apply enter="only-blue" region="blue-iron" message="You may only enter your iron supplies room!"/>
     <apply enter="only-blue" region="bluespawn" message="You may not enter the enemy spawn!"/>
@@ -275,7 +275,7 @@
     </wool>
 </wools>
 <!--Monuments-->
-<destroyables materials="obsidian;gold block;coal block;glass" mode-changes="true" completion="30%">
+<destroyables materials="obsidian;gold block;coal block;glass" mode-changes="true" repairable="false" completion="30%">
     <destroyable name="Silver Entrance" owner="blue-team">
         <region id="silver"/>
     </destroyable>
