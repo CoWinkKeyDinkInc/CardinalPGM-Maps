@@ -1,7 +1,7 @@
 <map proto="1.4.0">
 <include src="tutorial.xml"/>
 <name>Table Block</name>
-<version>1.2.1</version>
+<version>1.2.3</version>
 <objective>Break into the enemy's monuments and bring back the wools that are inside.</objective>
 <!--  Map authors & contributors.  -->
 <authors>
@@ -15,6 +15,54 @@
     <contributor uuid="2fa0ea62-ca7f-477c-95d0-bff5be0f65b4" contribution="WorldEdit"/><!--8BitHer0-->
     <contributor uuid="bb628049-e368-4b1c-b8aa-d4557ae9416b" contribution="Provided Feedback"/><!--Anthonny-->
 </contributors>
+<!--Tutorial-->
+<tutorial>
+    <stage title="Table Block">
+        <message>
+            <line>`rThis map is a `a`lCapture the Wool `r(CTW) and a `a`lDestroy the Monument `r(DTW)` map.</line>
+            <line>`rThe objective is to destroy the entrance (the monument) and return the wool to the player's spawn!</line>
+        </message>
+        <teleport>
+            <point yaw="0" pitch="90">-308.5,73,-409.5</point>
+        </teleport>
+    </stage>
+    <stage title="Entrances">
+        <message>
+            <line>`rThis Entrance belongs to `6Yellow`r team. `1Blue`r team must break into the entrance to get one of the wools.</line>
+            <line>`rYou have to destory a decent amount of pieces to complete the objective.</line>
+            <line>`rTeams cannot enter their own entrance they have to defend, if they try, they get teleported...</line>
+        </message>
+        <teleport>
+            <point yaw="0" pitch="90">-167.5,20,-431.5</point>
+        </teleport>
+    </stage>
+    <stage title="Platforms">
+        <message>
+            <line>`l`4Over here! `rIt's a quick way to get to the front lines, but be careful! You might make an opening for the enemy! Now, back to the entrance...</line>
+        </message>
+        <teleport>
+            <point yaw="-45" pitch="63">-372,20,-388</point>
+        </teleport>
+    </stage>
+    <stage title="Wool Rooms">
+        <message>
+            <line>`rThis is the inside of an Entrance, which contains a wool spawner and a portal.</line>
+            <line>`rYou shall use the portal to leave.</line>
+        </message>
+        <teleport>
+            <point yaw="0" pitch="45">-167.5,5,-434.5</point>
+        </teleport>
+    </stage>
+    <stage title="HourGlasses">
+        <message>
+            <line>`rThis is an HourGlass, which is where you're teleported after entering the portal inside an Entrance.</line>
+            <line>`rThe enemy can't get in your hour glass, so you can safely stay inside and exit at your own pace.</line>
+        </message>
+        <teleport>
+            <point yaw="-45" pitch="33">-458.5,30,-418.5</point>
+        </teleport>
+    </stage>
+</tutorial>
 <!--Teams-->
 <teams>
     <team id="yellow-team" color="yellow" max="32" max-overfill="40">Yellow</team>
@@ -93,8 +141,8 @@
 <!--Regions-->
 <regions>
     <union id="spawns">
-        <rectangle id="bluespawn" min="-142,-416" max="-126,-401"/>
-        <rectangle id="yellowspawn" min="-489,-416" max="-474,-401"/>
+        <rectangle id="bluespawn" min="-143,-420" max="-126,-401"/>
+        <rectangle id="yellowspawn" min="-489,-416" max="-473,-396"/>
     </union>
     <union id="gaps">
         <rectangle min="-186,-445" max="-180,-371"/>
@@ -109,12 +157,12 @@
     </union>
     <union id="woolrooms">
         <union id="ywoolrooms"><!--Wools yellow need to get-->
-            <cuboid id="silverwool" min="-171,0,-428" max="-164,9,-435"/>
-            <cuboid id="graywool" min="-171,0,-388" max="-164,9,-381"/>
+            <cuboid id="silverwool" min="-173,0,-426" max="-162,11,-437"/>
+            <cuboid id="graywool" min="-173,0,-379" max="-162,11,-390"/>
         </union>
         <union id="bwoolrooms"><!--Wools blue need to get-->
-            <cuboid id="magentawool" min="-452,0,-389" max="-445,10,-382"/>
-            <cuboid id="brownwool" min="-452,0,-429" max="-445,10,-436"/>
+            <cuboid id="magentawool" min="-454,0,-380" max="-443,11,-390"/>
+            <cuboid id="brownwool" min="-454,0,-427" max="-443,11,-438"/>
         </union>
     </union>
     <union id="iron">
@@ -122,7 +170,7 @@
         <rectangle id="blue-iron" min="-141,-447" max="-127,-429"/>
     </union>
     <negative id="void">
-        <rectangle id="play-area" min="-492,-446" max="-125,-372"/>
+        <rectangle id="play-area" min="-492,-446" max="-124,-371"/>
     </negative>
     <union id="entrances">
         <union id="blue-entrances">
@@ -151,17 +199,17 @@
         <cuboid id="blueplat" min="-246,15,-431" max="-249,19,-434"/>
     </union>
     <!--Applying-->
-    <apply block-break="iron-rules" block-place="never" region="iron" message="You may only break iron blocks here!"/>
-    <apply block-break="never" region="woolindicator" message="You may not break this!"/>
-    <apply block-break="only-blue" block-place="never" region="yellow-entrances" message="You may not modify your entrances!"/>
-    <apply block-break="only-yellow" block-place="never" region="blue-entrances" message="You may not modify your entrances!"/>
+    <apply block-break="iron-rules" block-place="deny-all" region="iron" message="You may only break iron blocks here!"/>
+    <apply block-break="deny-all" region="woolindicator" message="You may not break this!"/>
+    <apply block-break="only-blue" block-place="deny-all" region="yellow-entrances" message="You may not modify your entrances!"/>
+    <apply block-break="only-yellow" block-place="deny-all" region="blue-entrances" message="You may not modify your entrances!"/>
     <apply block-place="no-safeties" region="play-area" message="You may not place safeties!"/>
 
     <apply block="deny-all" region="void" message="You may not build in the void!"/>
-    <apply block="never" region="clocks" message="You may not edit your hour glass"/>
-    <apply block="never" region="platforms" message="You may not edit the platforms"/>
-    <apply block="never" region="spawns" message="You may not edit any spawn!"/>
-    <apply block="never" region="woolrooms" message="You may not edit the wool rooms!"/>
+    <apply block="deny-all" region="clocks" message="You may not edit your hour glass"/>
+    <apply block="deny-all" region="platforms" message="You may not edit the platforms"/>
+    <apply block="deny-all" region="spawns" message="You may not edit any spawn!"/>
+    <apply block="deny-all" region="woolrooms" message="You may not edit the wool rooms!"/>
 
     <apply enter="only-blue" region="blue-iron" message="You may only enter your iron supplies room!"/>
     <apply enter="only-blue" region="bluespawn" message="You may not enter the enemy spawn!"/>
@@ -227,7 +275,7 @@
     </wool>
 </wools>
 <!--Monuments-->
-<destroyables materials="obsidian" mode-changes="true" completion="30%">
+<destroyables materials="obsidian;gold block;coal block;glass" mode-changes="true" repairable="false" completion="30%">
     <destroyable name="Silver Entrance" owner="blue-team">
         <region id="silver"/>
     </destroyable>
@@ -262,64 +310,32 @@
 </renewables-->
 <itemremove>
     <item>arrow</item>
-    <item>bow</item>
     <item>cobblestone</item>
     <item>cooked beef</item>
-    <item>diamond pickaxe</item>
-    <item>iron axe</item>
-    <item>leather boots</item>
-    <item>leather chestplate</item>
-    <item>leather helmet</item>
-    <item>leather leggings</item>
     <item>obsidian</item>
     <item>stained clay</item>
     <item>wood</item>
+    <item>gold block</item>
+    <item>coal block</item>
+    <item>glass</item>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
+    <item>leather leggings</item>
+    <item>leather boots</item>
+    <item>yellow flower</item>
+    <item>red rose</item>
+    <item>long grass</item>
+    <item>double plant</item>
+    <item>grass</item>
+    <item>stone</item>
+    <item>stained clay</item>
 </itemremove>
+<toolrepair>
+    <tool>stone sword</tool>
+    <tool>iron sword</tool>
+    <tool>bow</tool>
+    <tool>iron axe</tool>
+    <tool>diamond pickaxe</tool>
+</toolrepair>
 <maxbuildheight>36</maxbuildheight>
-<tutorial>
-    <stage title="King of the Hill">
-        <message>
-            <line>`rThis map is a `a`lCapture the Woll `r(CTW) and a `a`lDestroy the Monument `r(DTW)` map.</line>
-            <line>`rThe objective is to destroy the entrance (the monument) and return the wool to the player's spawn!</line>
-        </message>
-        <teleport>
-            <point yaw="90" pitch="50">42,48,0</point>
-        </teleport>
-    </stage>
-    <stage title="The Entrance">
-        <message>
-            <line>`rThis is an Entrance that belongs to `6Yellow`r. `1Blue `rmust break into the entrance to get one of the wools.</line>
-            <line>`rYou have to destory a decent amount of pieces to complete the objective.</line>
-            <line>`rTeams cannot enter their own entrance they have to defend, if they try, they get teleported...</line>
-        </message>
-        <teleport>
-            <point yaw="45" pitch="45">11,18,110</point>
-        </teleport>
-    </stage>
-    <stage title="The Platform">
-        <message>
-            <line>`l`4Over here! `rIt's a quick way to get to the front lines, but be careful! You might make an opening for the enemy! Now, back to the entrance...</line>
-        </message>
-        <teleport>
-            <point yaw="135" pitch="0">-1,2,100</point>
-        </teleport>
-    </stage>
-    <stage title="The Wool Room">
-        <message>
-            <line>`rThis is the inside of the entrance, nothing much other than a wool spawner and a portal. You use the portal to leave.</line>
-        </message>
-        <teleport>
-            <point yaw="135" pitch="0">-1,2,100</point>
-        </teleport>
-    </stage>
-    <stage title="The Hourglass">
-        <message>
-            <line>`rThis is the hour glass, which is where you're teleported after entering the portal.</line>
-            <line>`rThe enemy can't get in the hour glass, so you can safly stay inside and exit at your own pace.</line>
-        </message>
-        <teleport>
-            <point yaw="135" pitch="0">-1,2,100</point>
-        </teleport>
-    </stage>
-</tutorial>
 </map>
