@@ -9,8 +9,9 @@ What this repository does is try to update and fix the maps so they can play bet
 The best way to install CardinalPGM-Maps into your CardinalPGM server for production use is by cloning the repository into the server's `maps` folder. This makes it much easier to receive updates with a single command!. Much better than downloading entire repo as a zip, and then removing the old copy and putting in the new one. Here's how do to it!
 
   1. Go to the `Cardinal` folder inside the `plugins` folder, and open up `config.yml`
-  2. Enter a new line underneath the default repository `maps`. Paste in this line: `git:https://github.com/CoWinkKeyDinkInc/CardinalPGM-Maps`.
-  3. Maps and new commits should be download after a restart, if not, type in `/newmaps`.
+  2. Enter a new line underneath the default repository `maps`. 
+  3. Paste in this line: `git:https://github.com/CoWinkKeyDinkInc/CardinalPGM-Maps`.
+  4. Maps and new commits should be download after a restart, if not, type in `/newmaps`.
 
 ### How to use for map testing/fork
 Clone the repository using your favorite [Git client](https://git-scm.com/downloads/guis) into the `maps` folder.
