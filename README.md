@@ -6,12 +6,12 @@ A ton of maps are submitted on the Lifeboat PC (OCN) forums as public downloads.
 What this repository does is try to update and fix the maps so they can play better, look better, and are proven to work. We will also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on Lifeboat PC (Overcast Network)!
 
 ## How to install
-The best way to install CardinalPGM-Maps into your CardinalPGM server for production use is by cloning the repository into the server's `maps` folder. This makes it much easier to receive updates with a single command!. Much better than downloading entire repo as a zip, and then removing the old copy and putting in the new one. Here's how do to it!
+The best way to install CardinalPGM-Maps into your CardinalPGM server for production use is by cloning the repository by using CardinalPGM's cloning feature. This makes it much easier to receive updates with a single command! Much better than downloading entire repo as a zip, and then removing the old copy and putting in the new one. Here's how do to it!
 
   1. Go to the `Cardinal` folder inside the `plugins` folder, and open up `config.yml`
-  2. Enter a new line underneath the default repository `maps`. 
-  3. Paste in this line: `git:https://github.com/CoWinkKeyDinkInc/CardinalPGM-Maps`.
-  4. Maps and new commits should be download after a restart, if not, type in `/newmaps`.
+  2. Enter a new line underneath the default repository `maps`
+  3. Paste in this line: `git:https://github.com/CoWinkKeyDinkInc/CardinalPGM-Maps`
+  4. Maps and new commits should be download after a restart, if not, type in `/newmaps`
 
 ### How to use for map testing/fork
 Clone the repository using your favorite [Git client](https://git-scm.com/downloads/guis) into the `maps` folder.
