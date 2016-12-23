@@ -1,9 +1,9 @@
 # CardinalPGM-Maps
 The sequel to OCN-Maps, but like all sequels it's not as good.
 
-A ton of maps are submitted on the Lifeboat PC (OCN) forums as public downloads. Unfortunately, lots of these maps don't get any further than the forums, including many good ones that could play great.
+Lifeboat is soon going to [trash PGM for no reason and break all compatability with maps](https://oc.tc/forums/topics/5859938767d52262ae000006). Unfortunately, lots of these maps will not get any further than the forums, and some might never be played again, including many good ones that could/can play great.
 
-What this repository does is try to update and fix the maps so they can play better, look better, and are proven to work. We will also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on Lifeboat PC (Overcast Network)!
+What this repository does is to preserve, update and fix the maps so they can play better, look better, and are proven to work. We will also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on Lifeboat PC (Overcast Network) with PGM!
 
 ## How to install
 The best way to install CardinalPGM-Maps into your CardinalPGM server for production use is by cloning the repository by using CardinalPGM's cloning feature. This makes it much easier to receive updates with a single command! Much better than downloading entire repo as a zip, and then removing the old copy and putting in the new one. Here's how do to it!
