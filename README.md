@@ -5,6 +5,8 @@ Lifeboat is soon going to [trash PGM for no reason and break all compatability w
 
 What this repository does is to preserve, update and fix the maps so they can play better, look better, and are proven to work. We will also try to make them more compatible with [CardinalPGM](https://github.com/twizmwazin/CardinalPGM), an amazing open source plugin that allows you to play maps just like if it was on Lifeboat PC (Overcast Network) with PGM!
 
+Please join our [Discord](https://discord.gg/JgSYQFB) to help us out!!
+
 ## How to install
 The best way to install CardinalPGM-Maps into your CardinalPGM server for production use is by cloning the repository by using CardinalPGM's cloning feature. This makes it much easier to receive updates with a single command! Much better than downloading entire repo as a zip, and then removing the old copy and putting in the new one. Here's how do to it!
 
@@ -24,6 +26,7 @@ Copy and paste your fork URL.
     - **The official spacing is four spaces, do not space tags inside the `<map>` tag.**
  - Put this repo on your CardinalPGM server to test for errors.
  - Make sure to enable the `displayMapLoadErrors` property in `config.yml`, which can be located in the `Cardinal` folder which is inside the `plugins` folder.
+ - Go to our [Discord](https://discord.gg/JgSYQFB) server or GitHub Issues for any extra help
 
 ## How do I get my map on this repository?
  - The only requirement for maps to be considered adding to the repo is that there will be no conflicts arising from the map being added. You must be the author of a map, or have permission to do so to submit a pull request containing the map.  You don't need an XML file to submit a map.
