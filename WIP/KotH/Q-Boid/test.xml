@@ -54,47 +54,39 @@
         <block>86,8,13</block>
     </default>
 </spawns>
-<killreward>
-    <item amount="5">vine</item>
-    <item amount="8">arrow</item>
-    <item>golden apple</item>
-</killreward>
-<killreward>
-    <filter>
-        <all>
+<!-- now called kill-rewards -->
+<kill-rewards>
+    <kill-reward>
+        <item amount="5">vine</item>
+        <item amount="8">arrow</item>
+        <item>golden apple</item>
+    </kill-reward>
+    <!-- give TNT to the player every three kills -->
+    <kill-reward>
+        <filter>
+            <kill-streak count="3" repeat="true"/>
+        </filter>
+        <item>tnt</item>
+    </kill-reward>
+    <kill-reward>
+        <filter>
             <team>yellow</team>
-            <kill-streak repeat="true" count="3"/>
-        </all>
-    </filter>
-    <item>tnt</item>
-</killreward>
-<killreward>
-    <filter>
-        <team>yellow</team>
-    </filter>
-    <item amount="10" damage="4">stained glass</item>
-    <item amount="5" damage="4">wool</item>
-</killreward>
-<killreward>
-    <filter>
-        <all>
+        </filter>
+        <item amount="10" damage="4">stained glass</item>
+        <item amount="5" damage="4">wool</item>
+    </kill-reward>
+    <kill-reward>
+        <filter>
             <team>lime</team>
-            <kill-streak repeat="true" count="3"/>
-        </all>
-    </filter>
-    <item>tnt</item>
-</killreward>
-<killreward>
-    <filter>
-        <team>lime</team>
-    </filter>
-    <item amount="10" damage="5">stained glass</item>
-    <item amount="5" damage="5">wool</item>
-</killreward>
+        </filter>
+        <item amount="10" damage="5">stained glass</item>
+        <item amount="5" damage="5">wool</item>
+    </kill-reward>
+</kill-rewards>
 <toolrepair>
+    <tool>stone sword</tool>
     <tool>bow</tool>
     <tool>shears</tool>
-    <tool>stone sword</tool>
 </toolrepair>
 <itemremove>
     <item>arrow</item>
