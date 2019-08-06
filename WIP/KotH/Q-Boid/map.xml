@@ -113,40 +113,6 @@
 <disabledamage>
     <damage ally="false" self="false" enemy="true" other="false">block explosion</damage>
 </disabledamage>
-<regions>
-    <apply block="no-break">
-        <rectangle id="playable" min="1085,-368" max="1035,-418"/>
-    </apply>
-    <apply block="deny-all">
-        <cuboid id="lime-spawn" min="1034,0,-370" max="1013,256,-390"/>
-        <cuboid id="yellow-spawn" min="1083,0,-420" max="1064,256,-438"/>
-        <cuboid id="obs-spawn" min="1080,0,-364" max="1089,10,-373"/>
-        <cuboid id="top-cube" min="1043,48,-410" max="1035,52,-418"/>
-        <negative>
-            <region id="playable"/>
-        </negative>
-    </apply>
-    <apply region="lime-spawn" enter="only-lime"/>
-    <apply region="yellow-spawn" enter="only-yellow"/>
-</regions>
-<filters>
-    <filter name="only-lime">
-        <team>lime</team>
-    </filter>
-    <filter name="only-yellow">
-        <team>yellow</team>
-    </filter>
-    <filter id="no-break">
-        <not>
-            <all>
-                <any>
-                    <block>quartz block</block>
-                    <block>stained clay</block>
-                </any>
-            </all>
-        </not>
-    </filter>
-</filters>
 <score>
     <limit>3200</limit>
 </score>
