@@ -99,7 +99,7 @@
     </rule>
 </blockdrops>
 <disabledamage>
-    <damage ally="true">block explosion</damage>
+    <damage ally="true" self="false">block explosion</damage>
 </disabledamage>
 <tnt>
     <yield>0</yield>
