@@ -84,6 +84,7 @@
     <item amount="2">tnt</item>
     <item amount="2">golden apple</item>
 </killreward>
+<!-- comment out to disable sand and wool from flying when blown up -->
 <blockdrops>
     <rule>
         <filter>
@@ -104,4 +105,5 @@
     <yield>0</yield>
     <licensing>off</licensing>
 </tnt>
+<timelock>on</timelock>
 </map>
